@@ -16,11 +16,46 @@ import {
   ArrowRight,
   Shield,
   Award,
-  DollarSign
+  DollarSign,
+  Zap,
+  Brain,
+  Calculator,
+  Rocket
 } from 'lucide-react';
 
 function App() {
   const [selectedEngagement, setSelectedEngagement] = useState('fractional');
+
+  const frameworkSteps = [
+    {
+      letter: 'H',
+      title: 'High-Impact Strategy Design',
+      description: 'Custom campaign architecture built for your specific business goals and market position',
+      icon: Brain,
+      color: 'bg-blue-500'
+    },
+    {
+      letter: 'A',
+      title: 'Audience-Driven Optimization',
+      description: 'Precision targeting based on customer behavior, intent signals, and conversion patterns',
+      icon: Target,
+      color: 'bg-green-500'
+    },
+    {
+      letter: 'N',
+      title: 'Numbers-Led Decisions',
+      description: 'Data-driven optimization using advanced analytics, attribution modeling, and performance metrics',
+      icon: Calculator,
+      color: 'bg-purple-500'
+    },
+    {
+      letter: 'S',
+      title: 'Scalable Optimization',
+      description: 'Systematic growth processes that maintain efficiency while expanding reach and revenue',
+      icon: Rocket,
+      color: 'bg-orange-500'
+    }
+  ];
 
   const engagementOptions = [
     {
@@ -78,21 +113,26 @@ function App() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Fractional Google Ads Director
-            <span className="block text-blue-600 mt-2">
-              for Busy Founders & Business Owners
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto">
-            Expert Google Ads Strategy Without the Full-Time Cost
-          </p>
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="mb-8">
+            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+              <span className="text-blue-600">H.A.N.S</span> Google Ads Framework
+            </h1>
+            <p className="text-2xl md:text-3xl text-slate-700 font-semibold mb-6 max-w-4xl mx-auto leading-relaxed">
+              The Premium Google Ads Strategy System That Transforms Founders Into Market Leaders
+            </p>
+            <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+              A battle-tested methodology that's generated over $50M in client revenue. 
+              This isn't just campaign management—it's a complete strategic framework that turns Google Ads 
+              into your most predictable growth engine.
+            </p>
+          </div>
+          
           <a
             href="https://tidycal.com/hanslacida/10-private-meeting-only-with-hans"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Book a Strategy Call
             <ArrowRight className="w-5 h-5" />
@@ -100,15 +140,51 @@ function App() {
         </div>
       </section>
 
+      {/* H.A.N.S Framework Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+              The H.A.N.S Framework Methodology
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Four pillars of Google Ads excellence that consistently deliver exceptional results for ambitious businesses
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {frameworkSteps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <div key={index} className="bg-slate-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 border border-slate-100">
+                  <div className="flex items-start gap-6">
+                    <div className={`w-16 h-16 ${step.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                      <span className="text-2xl font-bold text-white">{step.letter}</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-slate-900 mb-3">{step.title}</h3>
+                      <p className="text-slate-600 text-lg leading-relaxed">{step.description}</p>
+                    </div>
+                  </div>
+                  <div className="mt-6 ml-22">
+                    <Icon className="w-8 h-8 text-slate-400" />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Who This Is For */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
             Who This Is For
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {whoThisIsFor.map((item, index) => (
-              <div key={index} className="flex items-start gap-4 p-6 bg-slate-50 rounded-lg">
+              <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-sm">
                 <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
                 <p className="text-slate-700 text-lg">{item}</p>
               </div>
@@ -118,7 +194,7 @@ function App() {
       </section>
 
       {/* What I Offer */}
-      <section className="py-20 px-4 bg-slate-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -133,7 +209,7 @@ function App() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <div key={index} className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                <div key={index} className="bg-slate-50 p-8 rounded-lg hover:shadow-md transition-shadow duration-200 border border-slate-100">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                     <Icon className="w-6 h-6 text-blue-600" />
                   </div>
@@ -147,7 +223,7 @@ function App() {
       </section>
 
       {/* Engagement Options */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
             Engagement Options
@@ -198,7 +274,7 @@ function App() {
       </section>
 
       {/* Why Work With Me */}
-      <section className="py-20 px-4 bg-slate-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-16 text-center">
             Why Work With Me
@@ -222,9 +298,9 @@ function App() {
       </section>
 
       {/* Testimonial Placeholder */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-slate-50 p-12 rounded-lg">
+          <div className="bg-white p-12 rounded-lg shadow-sm">
             <div className="flex justify-center mb-6">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
@@ -279,7 +355,7 @@ function App() {
             href="https://tidycal.com/hanslacida/10-private-meeting-only-with-hans"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Book a Strategy Call
             <ArrowRight className="w-5 h-5" />

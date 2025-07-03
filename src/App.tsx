@@ -22,9 +22,21 @@ import {
   Calculator,
   Rocket
 } from 'lucide-react';
+import TypewriterText from './components/TypewriterText';
 
 function App() {
   const [selectedEngagement, setSelectedEngagement] = useState('fractional');
+
+  const subheadlineVariants = [
+    "Turn Clicks Into Clients with a Proven 4-Pillar PPC System",
+    "Not Just Ads—A Full System for Predictable Growth",
+    "Your Competitive Edge in the Google Ads Battlefield",
+    "Built for Founders Who Hate Wasting Money on Ads",
+    "PPC Leadership Without the Overhead",
+    "Your Ads. Smarter. Faster. More Profitable.",
+    "Where Strategy Meets Execution — And Ads Start Performing",
+    "The Google Ads System Trusted by $10M+ in Ad Spend"
+  ];
 
   const frameworkSteps = [
     {
@@ -115,12 +127,22 @@ function App() {
       <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
               <span className="text-blue-600">H.A.N.S</span> Google Ads Framework
             </h1>
-            <p className="text-2xl md:text-3xl text-slate-700 font-semibold mb-6 max-w-4xl mx-auto leading-relaxed">
-              The Premium Google Ads Strategy System That Transforms Founders Into Market Leaders
-            </p>
+            
+            {/* Animated Typewriter Subheadline */}
+            <div className="h-16 md:h-20 flex items-center justify-center mb-6">
+              <h2 className="text-xl md:text-2xl lg:text-3xl text-slate-700 font-semibold max-w-4xl mx-auto leading-relaxed">
+                <TypewriterText 
+                  texts={subheadlineVariants}
+                  typingSpeed={60}
+                  deletingSpeed={40}
+                  pauseDuration={3000}
+                />
+              </h2>
+            </div>
+            
             <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
               A battle-tested methodology that's generated over $50M in client revenue. 
               This isn't just campaign management—it's a complete strategic framework that turns Google Ads 

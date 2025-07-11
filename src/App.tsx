@@ -320,6 +320,23 @@ function App() {
       </section>
 
       {/* Testimonial Placeholder */}
+       {/* Embedded Reviews */}
+        <div className="bg-gray-900 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-white text-center mb-8">
+            More Client Reviews
+          </h3>
+          <div className="w-full overflow-hidden rounded-lg">
+            <iframe 
+              height="800px" 
+              id='testimonialto-paxhl-google-ppc-management-tag-all-dark-animated' 
+              src="https://embed-v2.testimonial.to/w/paxhl-google-ppc-management?animated=on&theme=dark&shadowColor=ffffff&speed=1&hideDate=on&hideSource&tag=all&disableHoverPause&cc=off" 
+              frameBorder="0" 
+              scrolling="no" 
+              width="100%"
+              className="rounded-lg"
+            />
+          </div>
+        </div>
       <section className="py-20 px-4 bg-slate-50">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-white p-12 rounded-lg shadow-sm">

@@ -323,16 +323,16 @@ function App() {
        {/* Embedded Reviews */}
         <div className="bg-gray-900 rounded-2xl p-8">
           <h3 className="text-2xl font-bold text-white text-center mb-8">
-            What Clients Are Saying
-          </h3>
-          <div className="w-full overflow-hidden rounded-lg">
+             What Clients Are Saying
+            </h3>
+          <div className="w-full flex justify-center overflow-hidden rounded-lg">
             <iframe 
-              height="600px" 
-              id='testimonialto-paxhl-google-ppc-management-tag-all-dark-animated' 
+              height="800px" 
+              id="testimonialto-paxhl-google-ppc-management-tag-all-dark-animated" 
               src="https://embed-v2.testimonial.to/w/paxhl-google-ppc-management?animated=on&theme=dark&shadowColor=ffffff&speed=1&hideDate=on&hideSource&tag=all&disableHoverPause&cc=off" 
               frameBorder="0" 
               scrolling="no" 
-              width="50%"
+              width="80%"
               className="rounded-lg"
             />
           </div>

@@ -323,7 +323,7 @@ function App() {
        {/* Embedded Reviews */}
         <div className="bg-gray-900 rounded-2xl p-8">
           <h3 className="text-2xl font-bold text-white text-center mb-8">
-            More Client Reviews
+            What Clients Are Saying
           </h3>
           <div className="w-full overflow-hidden rounded-lg">
             <iframe 

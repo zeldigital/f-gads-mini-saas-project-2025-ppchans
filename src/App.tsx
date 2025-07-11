@@ -332,7 +332,7 @@ function App() {
               src="https://embed-v2.testimonial.to/w/paxhl-google-ppc-management?animated=on&theme=dark&shadowColor=ffffff&speed=1&hideDate=on&hideSource&tag=all&disableHoverPause&cc=off" 
               frameBorder="0" 
               scrolling="no" 
-              width="100%"
+              width="80%"
               className="rounded-lg"
             />
           </div>

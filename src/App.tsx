@@ -331,7 +331,7 @@ function App() {
             <blockquote className="text-xl text-slate-700 italic mb-6">
               "Hans transformed our Google Ads performance in just 3 months. Our ROAS increased by 300% while cutting our cost per acquisition in half. His strategic approach and hands-on optimization made all the difference."
             </blockquote>
-            <cite className="text-slate-600 font-medium">— Sarah Chen, CEO at TechScale Inc.</cite>
+            <cite className="text-slate-600 font-medium">— Adam, Founder/CEO</cite>
           </div>
         </div>
       </section>

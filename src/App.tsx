@@ -23,6 +23,7 @@ import {
   Rocket
 } from 'lucide-react';
 import TypewriterText from './components/TypewriterText';
+import Footer from './components/Footer';
 
 function App() {
   const [selectedEngagement, setSelectedEngagement] = useState('fractional');
@@ -163,7 +164,7 @@ function App() {
       </section>
 
       {/* H.A.N.S Framework Section */}
-      <section className="py-20 px-4 bg-white">
+      <section id="framework" className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
@@ -245,7 +246,7 @@ function App() {
       </section>
 
       {/* Engagement Options */}
-      <section className="py-20 px-4 bg-slate-50">
+      <section id="engagement" className="py-20 px-4 bg-slate-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
             Engagement Options
@@ -327,6 +328,7 @@ function App() {
             </h3>
           <div className="w-full flex justify-center overflow-hidden rounded-lg">
             <iframe 
+              title="Client testimonials"
               height="800px" 
               id="testimonialto-paxhl-google-ppc-management-tag-all-dark-animated" 
               src="https://embed-v2.testimonial.to/w/paxhl-google-ppc-management?animated=on&theme=dark&shadowColor=ffffff&speed=1&hideDate=on&hideSource&tag=all&disableHoverPause&cc=off" 
@@ -402,6 +404,8 @@ function App() {
           </a>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

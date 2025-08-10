@@ -7,6 +7,7 @@ import CostCalculatorPage from './pages/CostCalculator';
 import GuidesPage from './pages/Guides';
 import FractionalPPCPage from './pages/FractionalPPC';
 import FullManagementPage from './pages/FullManagement';
+import CalculatorPage from './pages/Calculator';
 
 function Router() {
   const [path, setPath] = useState<string>(
@@ -26,6 +27,7 @@ function Router() {
   if (path === '/guides') return <GuidesPage />;
   if (path === '/fractional-ppc-director') return <FractionalPPCPage />;
   if (path === '/google-ads-management') return <FullManagementPage />;
+  if (path === '/calculator') return <CalculatorPage />;
   return <HomePage />;
 }
 

@@ -59,7 +59,10 @@ function CostCalculatorPage() {
         <div className="max-w-3xl mx-auto text-center bg-slate-50 p-10 rounded-xl border border-slate-200">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Want a tailored budget and forecast?</h2>
           <p className="text-slate-700 mb-6">Best for US brands spending $5K+/mo. No time tracking—performance only.</p>
-          <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold">Book a Private Strategy Call <ArrowRight className="w-5 h-5" /></a>
+          <div className="flex items-center justify-center gap-3 flex-wrap">
+            <a href="/calculator" onClick={(e) => { e.preventDefault(); navigate('/calculator'); }} className="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-lg text-base font-semibold">Open Interactive Calculator</a>
+            <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold">Book a Private Strategy Call <ArrowRight className="w-5 h-5" /></a>
+          </div>
         </div>
       </section>
 

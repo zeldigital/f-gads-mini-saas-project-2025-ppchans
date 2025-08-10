@@ -17,6 +17,11 @@ export function navigate(path: string): void {
     };
     // Delay to allow view to render
     setTimeout(scrollToHash, 0);
+  } else {
+    // No hash: scroll to top of page after route render
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 0);
   }
 }
 

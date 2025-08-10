@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Linkedin, Globe } from 'lucide-react';
 import { navigate } from '../router/navigate';
 
@@ -31,6 +30,7 @@ function Footer() {
             <li><a href="/case-studies" onClick={(e) => { e.preventDefault(); navigate('/case-studies'); }} className="hover:text-white">Case Studies</a></li>
             <li><a href="/misrepresentation-fix" onClick={(e) => { e.preventDefault(); navigate('/misrepresentation-fix'); }} className="hover:text-white">Google Ads Misrepresentation Fix</a></li>
             <li><a href="/cost-calculator" onClick={(e) => { e.preventDefault(); navigate('/cost-calculator'); }} className="hover:text-white">Google Ads Cost Calculator</a></li>
+            <li><a href="/calculator" onClick={(e) => { e.preventDefault(); navigate('/calculator'); }} className="hover:text-white">Interactive Calculator</a></li>
             <li><a href="/guides" onClick={(e) => { e.preventDefault(); navigate('/guides'); }} className="hover:text-white">PPC Guides</a></li>
             <li>
               <a

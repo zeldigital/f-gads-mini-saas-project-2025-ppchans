@@ -9,19 +9,18 @@
     gtag('js', new Date());
     gtag('config', 'G-ETDSDDFTB5');
   </script>
-
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>H.A.N.S Google Ads Framework | PPC Hans Lacida</title>
   <meta name="description" content="The H.A.N.S Google Ads Framework by PPC Hans Lacida — battle-tested strategy generating over $50M in revenue. Scale your growth with precision, data, and 10+ years of expertise." />
   <meta name="keywords" content="PPC Hans, PPC Hans Lacida, Google Ads Expert, Paid Media Consultant, PPC Strategy, Fractional PPC Director, Google Ads Consultant, H.A.N.S Framework, PPC Philippines" />
   <meta name="author" content="Hans Lacida" />
-
+  
   <!-- Robots -->
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://ppchans.com/" />
-
+  
   <!-- Open Graph -->
   <meta property="og:title" content="H.A.N.S Google Ads Framework | PPC Hans Lacida" />
   <meta property="og:description" content="Proven Google Ads system delivering $50M+ revenue. Trusted by founders who want results, not just clicks." />
@@ -29,43 +28,47 @@
   <meta property="og:url" content="https://ppchans.com/" />
   <meta property="og:image" content="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" />
   <meta property="og:site_name" content="PPC Hans" />
-
+  
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="H.A.N.S Google Ads Framework | PPC Hans Lacida" />
   <meta name="twitter:description" content="Battle-tested Google Ads strategy generating over $50M in revenue." />
   <meta name="twitter:image" content="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" />
   <meta name="twitter:creator" content="@hanslacida" />
-
+  
   <!-- Favicon -->
-  <link rel="icon" href="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" type="image/webp" />
-
+  <link rel="icon" href="https://i.ibb.co/LDmq28Mv/ppchans-thumbnail-default.jpg" type="image/jpg" />
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+  
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Outfit', 'Inter', 'sans-serif']
           },
           animation: {
-            'fade-in-up': 'fadeInUp 0.6s ease-out',
-            'fade-in': 'fadeIn 0.8s ease-out',
-            'slide-in-right': 'slideInRight 0.6s ease-out',
-            'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
-            'float': 'float 3s ease-in-out infinite',
+            'fade-in-up': 'fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'fade-in': 'fadeIn 1.2s ease-out forwards',
+            'slide-in-right': 'slideInRight 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+            'float': 'float 8s ease-in-out infinite',
+            'gradient-shift': 'gradientShift 6s ease infinite',
+            'border-flow': 'borderFlow 3s linear infinite',
+            'scale-in': 'scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
           },
           keyframes: {
             fadeInUp: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '0%': { opacity: '0', transform: 'translateY(40px)' },
               '100%': { opacity: '1', transform: 'translateY(0)' }
             },
             fadeIn: {
@@ -73,194 +76,294 @@
               '100%': { opacity: '1' }
             },
             slideInRight: {
-              '0%': { opacity: '0', transform: 'translateX(30px)' },
+              '0%': { opacity: '0', transform: 'translateX(50px)' },
               '100%': { opacity: '1', transform: 'translateX(0)' }
             },
             pulseGlow: {
-              '0%, 100%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.3)' },
-              '50%': { boxShadow: '0 0 40px rgba(59, 130, 246, 0.6)' }
+              '0%, 100%': { boxShadow: '0 0 30px rgba(59, 130, 246, 0.3)' },
+              '50%': { boxShadow: '0 0 60px rgba(59, 130, 246, 0.6)' }
             },
             float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' }
+              '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+              '33%': { transform: 'translateY(-30px) rotate(2deg)' },
+              '66%': { transform: 'translateY(-15px) rotate(-2deg)' }
+            },
+            gradientShift: {
+              '0%, 100%': { backgroundPosition: '0% 50%' },
+              '50%': { backgroundPosition: '100% 50%' }
+            },
+            borderFlow: {
+              '0%, 100%': { backgroundPosition: '0% 50%' },
+              '50%': { backgroundPosition: '100% 50%' }
+            },
+            scaleIn: {
+              '0%': { opacity: '0', transform: 'scale(0.9)' },
+              '100%': { opacity: '1', transform: 'scale(1)' }
             }
           }
         }
       }
     }
   </script>
-
+  
   <style>
-    /* Smooth scrolling */
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
-
-    /* Hero gradient overlay */
-    .hero-bg {
-      background: linear-gradient(135deg, 
-        rgba(0, 0, 0, 0.92) 0%, 
-        rgba(15, 23, 42, 0.88) 50%, 
-        rgba(0, 0, 0, 0.92) 100%),
+    
+    body {
+      overflow-x: hidden;
+    }
+    
+    /* Premium hero background with parallax effect */
+    .hero-premium {
+      background: 
+        linear-gradient(135deg, 
+          rgba(0, 0, 0, 0.95) 0%, 
+          rgba(15, 23, 42, 0.92) 40%,
+          rgba(30, 41, 59, 0.90) 60%,
+          rgba(0, 0, 0, 0.95) 100%),
         url('https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
     }
-
-    /* Animated gradient text */
-    .gradient-text {
-      background: linear-gradient(90deg, #60a5fa, #3b82f6, #2563eb);
-      background-size: 200% auto;
+    
+    /* Animated premium gradient text */
+    .gradient-premium {
+      background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 25%, #2563eb 50%, #1d4ed8 75%, #3b82f6 100%);
+      background-size: 300% 300%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      animation: gradient-shift 3s ease infinite;
+      animation: gradientShift 6s ease infinite;
     }
-
-    @keyframes gradient-shift {
-      0%, 100% { background-position: 0% center; }
-      50% { background-position: 100% center; }
-    }
-
-    /* Glass morphism effect */
-    .glass-card {
-      background: rgba(24, 24, 27, 0.6);
-      backdrop-filter: blur(16px);
+    
+    /* Glass morphism premium */
+    .glass-premium {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(24px) saturate(180%);
       border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     }
-
-    /* Animated underline */
-    .section-header::after {
-      content: '';
-      position: absolute;
-      bottom: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: linear-gradient(90deg, #3b82f6, #60a5fa, #93c5fd);
-      border-radius: 2px;
-      animation: pulse-width 2s ease-in-out infinite;
+    
+    .glass-card {
+      background: rgba(24, 24, 27, 0.7);
+      backdrop-filter: blur(20px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
-
-    @keyframes pulse-width {
-      0%, 100% { width: 80px; opacity: 1; }
-      50% { width: 120px; opacity: 0.8; }
-    }
-
-    /* Card hover glow */
-    .card-glow {
+    
+    /* Premium animated border */
+    .premium-border {
       position: relative;
-      transition: all 0.3s ease;
+      z-index: 0;
     }
-
-    .card-glow::before {
+    
+    .premium-border::before {
       content: '';
       position: absolute;
       inset: -2px;
-      background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
       border-radius: inherit;
+      padding: 2px;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899, #f59e0b, #3b82f6);
+      background-size: 400% 400%;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      animation: borderFlow 4s linear infinite;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.4s ease;
       z-index: -1;
-      filter: blur(8px);
     }
-
-    .card-glow:hover::before {
-      opacity: 0.6;
+    
+    .premium-border:hover::before {
+      opacity: 1;
     }
-
-    /* Gradient border animation */
-    .gradient-border {
+    
+    /* Premium grid pattern */
+    .grid-premium {
+      background-image: 
+        radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.05) 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+    
+    /* Spotlight hover effect */
+    .spotlight-premium {
       position: relative;
-      background: linear-gradient(#18181b, #18181b) padding-box,
-                  linear-gradient(135deg, #3b82f6, #8b5cf6) border-box;
-      border: 2px solid transparent;
+      overflow: hidden;
     }
-
-    /* Stats counter animation */
-    .stat-number {
-      font-variant-numeric: tabular-nums;
+    
+    .spotlight-premium::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s ease, height 0.6s ease;
+      pointer-events: none;
+      z-index: 0;
     }
-
-    /* Form focus state */
-    .form-input:focus-within {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+    
+    .spotlight-premium:hover::after {
+      width: 500px;
+      height: 500px;
     }
-
-    /* Custom scrollbar */
+    
+    .spotlight-premium > * {
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Premium glow effect */
+    .glow-premium {
+      position: relative;
+    }
+    
+    .glow-premium::before {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: -1;
+      filter: blur(20px);
+    }
+    
+    .glow-premium:hover::before {
+      opacity: 1;
+    }
+    
+    /* Custom premium scrollbar */
     ::-webkit-scrollbar {
-      width: 10px;
+      width: 14px;
     }
-
+    
     ::-webkit-scrollbar-track {
-      background: #09090b;
+      background: #000000;
+      border-left: 1px solid #18181b;
     }
-
+    
     ::-webkit-scrollbar-thumb {
-      background: #3b82f6;
-      border-radius: 5px;
+      background: linear-gradient(180deg, #3b82f6, #1e40af);
+      border-radius: 7px;
+      border: 3px solid #000000;
+      transition: background 0.3s ease;
     }
-
+    
     ::-webkit-scrollbar-thumb:hover {
-      background: #2563eb;
+      background: linear-gradient(180deg, #60a5fa, #3b82f6);
+    }
+    
+    /* Stagger animation delays */
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+    .stagger-4 { animation-delay: 0.4s; }
+    .stagger-5 { animation-delay: 0.5s; }
+    .stagger-6 { animation-delay: 0.6s; }
+    
+    /* Premium section divider */
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+    }
+    
+    /* Reveal animation */
+    .reveal-element {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    .reveal-element.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Premium stat counter */
+    .stat-counter {
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+    }
+    
+    /* Floating animation for background elements */
+    @keyframes floatSlow {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33% { transform: translate(30px, -30px) rotate(3deg); }
+      66% { transform: translate(-20px, 20px) rotate(-3deg); }
+    }
+    
+    .float-slow {
+      animation: floatSlow 15s ease-in-out infinite;
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
 
-  <!-- Navbar -->
-  <nav class="bg-zinc-900/95 backdrop-blur-xl border-b border-zinc-800/50 sticky top-0 z-50 transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-      <div class="flex justify-between items-center">
+<body class="bg-black text-zinc-100 antialiased">
+  
+  <!-- Premium Navigation -->
+  <nav class="fixed top-0 w-full z-50 transition-all duration-500" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-5">
+        
         <!-- Logo -->
-        <div class="flex items-center gap-3 group cursor-pointer">
-          <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-110 transition-transform">
-            H
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="relative glow-premium">
+            <div class="absolute inset-0 bg-blue-600/50 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative w-12 h-12 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl flex items-center justify-center shadow-2xl shadow-blue-600/40 group-hover:shadow-blue-600/60 group-hover:scale-110 transition-all duration-300">
+              <span class="text-white font-display font-black text-2xl">H</span>
+            </div>
           </div>
-          <div>
-            <span class="font-bold text-2xl tracking-tight bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">PPC Hans</span>
+          <div class="flex flex-col">
+            <span class="font-display font-bold text-2xl tracking-tight bg-gradient-to-r from-white via-zinc-100 to-zinc-300 bg-clip-text text-transparent">PPC Hans</span>
+            <span class="text-xs text-zinc-500 font-medium">Google Ads Specialist</span>
           </div>
-        </div>
-
-        <!-- Desktop Nav -->
-        <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-          <a href="#framework" class="text-zinc-300 hover:text-blue-400 transition-colors relative group">
-            Framework
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all"></span>
-          </a>
-          <a href="#results" class="text-zinc-300 hover:text-blue-400 transition-colors relative group">
-            Results
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all"></span>
-          </a>
-          <a href="#about" class="text-zinc-300 hover:text-blue-400 transition-colors relative group">
-            About Hans
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all"></span>
-          </a>
-        </div>
-
-        <!-- CTA Button -->
-        <a href="https://hanslacida.com/#contact" 
-           class="hidden lg:flex bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all px-6 py-3 rounded-xl font-semibold text-sm items-center gap-2 shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-105 transform">
-          <i class="fa-solid fa-rocket"></i>
-          Book Strategy Call
         </a>
-
-        <!-- Mobile menu button -->
-        <button id="mobile-menu-btn" class="lg:hidden text-2xl text-zinc-300 hover:text-white transition-colors">
-          <i class="fa-solid fa-bars"></i>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#framework" class="relative text-sm font-semibold text-zinc-400 hover:text-white transition-colors duration-300 group">
+            Framework
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="#results" class="relative text-sm font-semibold text-zinc-400 hover:text-white transition-colors duration-300 group">
+            Results
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="#about" class="relative text-sm font-semibold text-zinc-400 hover:text-white transition-colors duration-300 group">
+            About Hans
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="https://hanslacida.com/#contact" 
+             class="relative bg-gradient-to-r from-blue-600 via-blue-600 to-blue-700 hover:from-blue-700 hover:via-blue-700 hover:to-blue-800 text-white px-7 py-3 rounded-xl font-bold text-sm shadow-xl shadow-blue-600/40 hover:shadow-blue-600/60 transition-all duration-300 hover:scale-105 overflow-hidden group">
+            <span class="relative z-10 flex items-center gap-2">
+              <i class="fa-solid fa-rocket"></i>
+              Book Strategy Call
+            </span>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-zinc-400 hover:text-white transition-colors duration-300">
+          <i class="fa-solid fa-bars text-2xl"></i>
         </button>
       </div>
-
+      
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden lg:hidden mt-6 pb-4">
-        <div class="flex flex-col gap-4 text-sm font-medium">
-          <a href="#framework" class="text-zinc-300 hover:text-blue-400 transition-colors py-2 border-b border-zinc-800">Framework</a>
-          <a href="#results" class="text-zinc-300 hover:text-blue-400 transition-colors py-2 border-b border-zinc-800">Results</a>
-          <a href="#about" class="text-zinc-300 hover:text-blue-400 transition-colors py-2 border-b border-zinc-800">About Hans</a>
-          <a href="https://hanslacida.com/#contact" class="bg-blue-600 hover:bg-blue-700 transition-colors text-center py-3 rounded-xl font-semibold mt-2">
+      <div id="mobile-menu" class="hidden lg:hidden pb-5">
+        <div class="flex flex-col gap-4 pt-6 border-t border-zinc-800/50">
+          <a href="#framework" class="text-zinc-400 hover:text-white transition-colors py-2 text-sm font-medium">Framework</a>
+          <a href="#results" class="text-zinc-400 hover:text-white transition-colors py-2 text-sm font-medium">Results</a>
+          <a href="#about" class="text-zinc-400 hover:text-white transition-colors py-2 text-sm font-medium">About Hans</a>
+          <a href="https://hanslacida.com/#contact" 
+             class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-xl font-bold text-sm text-center shadow-xl shadow-blue-600/40 transition-all duration-300">
             Book Strategy Call
           </a>
         </div>
@@ -268,439 +371,690 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero-bg min-h-screen flex items-center relative overflow-hidden">
-    <!-- Animated background elements -->
+  <!-- Premium Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center hero-premium overflow-hidden pt-20">
+    
+    <!-- Animated premium background elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl animate-float"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl animate-float" style="animation-delay: 1s;"></div>
+      <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-[120px] float-slow"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-purple-600/15 rounded-full blur-[120px] float-slow" style="animation-delay: 3s;"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full grid-premium opacity-40"></div>
     </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        
         <!-- Left Column -->
-        <div class="space-y-8 animate-fade-in-up">
-          <!-- Badge -->
-          <div class="inline-flex items-center gap-2 glass-card px-5 py-2.5 rounded-full text-sm shadow-lg">
+        <div class="space-y-10">
+          
+          <!-- Premium Status Badge -->
+          <div class="inline-flex items-center gap-3 glass-premium px-5 py-3 rounded-full shadow-2xl opacity-0 animate-fade-in stagger-1">
             <span class="relative flex h-3 w-3">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-400"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 shadow-lg shadow-emerald-500/50"></span>
             </span>
-            <span class="font-medium">10+ Years • $50M+ Revenue Generated</span>
+            <span class="font-semibold text-sm bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">10+ Years • $50M+ Revenue Generated</span>
           </div>
-
-          <!-- Headline -->
-          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight">
-            The <span class="gradient-text">H.A.N.S</span><br>Google Ads<br>Framework
-          </h1>
-
-          <!-- Subheadline -->
-          <p class="text-xl sm:text-2xl text-zinc-300 leading-relaxed max-w-xl">
-            Battle-tested system that scales Google Ads profitably. No fluff. No agency overhead. Just <span class="text-blue-400 font-semibold">predictable growth</span> for founders who want real results.
+          
+          <!-- Premium Headline -->
+          <div class="space-y-6 opacity-0 animate-fade-in-up stagger-2">
+            <h1 class="font-display font-black text-6xl sm:text-7xl lg:text-8xl leading-[0.95] tracking-tight">
+              The <span class="gradient-premium">H.A.N.S</span><br>
+              Google Ads<br>
+              Framework
+            </h1>
+            <div class="flex gap-3">
+              <div class="h-1.5 w-20 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 rounded-full shadow-lg shadow-blue-500/50"></div>
+              <div class="h-1.5 w-12 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 rounded-full shadow-lg shadow-purple-500/50"></div>
+              <div class="h-1.5 w-8 bg-gradient-to-r from-pink-600 via-pink-500 to-pink-400 rounded-full shadow-lg shadow-pink-500/50"></div>
+            </div>
+          </div>
+          
+          <!-- Premium Subheadline -->
+          <p class="text-2xl sm:text-3xl text-zinc-300 leading-relaxed max-w-2xl font-light opacity-0 animate-fade-in-up stagger-3">
+            Battle-tested system that scales Google Ads profitably. No fluff. No agency overhead. Just <span class="text-blue-400 font-semibold bg-blue-400/10 px-2 rounded">predictable growth</span> for founders who want real results.
           </p>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          
+          <!-- Premium CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-5 pt-6 opacity-0 animate-fade-in-up stagger-4">
             <a href="https://hanslacida.com/#contact" 
-               class="group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all px-8 py-5 rounded-xl font-bold text-lg flex items-center justify-center gap-3 shadow-2xl shadow-blue-600/40 hover:shadow-blue-600/60 hover:scale-105 transform">
-              Get Your Free Framework Audit
-              <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+               class="group relative bg-gradient-to-r from-blue-600 via-blue-600 to-blue-700 hover:from-blue-700 hover:via-blue-700 hover:to-blue-800 text-white px-10 py-6 rounded-2xl font-bold text-lg shadow-2xl shadow-blue-600/50 hover:shadow-blue-600/70 transition-all duration-500 hover:scale-105 overflow-hidden">
+              <span class="relative z-10 flex items-center justify-center gap-3">
+                Get Your Free Framework Audit
+                <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+              </span>
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             </a>
             
             <a href="#results" 
-               class="group glass-card hover:bg-zinc-800/60 transition-all px-8 py-5 rounded-xl font-semibold text-lg flex items-center justify-center gap-3 shadow-lg">
-              See $50M+ Proof
-              <i class="fa-solid fa-chart-line group-hover:scale-110 transition-transform"></i>
+               class="group glass-premium hover:bg-zinc-800/80 text-white px-10 py-6 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 spotlight-premium">
+              <span class="flex items-center justify-center gap-3">
+                See $50M+ Proof
+                <i class="fa-solid fa-chart-line group-hover:scale-125 transition-transform duration-300"></i>
+              </span>
             </a>
           </div>
-
-          <!-- Social Proof -->
-          <div class="flex items-center gap-6 pt-6">
-            <div class="flex -space-x-3">
-              <div class="w-11 h-11 bg-gradient-to-br from-zinc-600 to-zinc-700 border-2 border-zinc-900 rounded-full overflow-hidden shadow-lg">
+          
+          <!-- Premium Social Proof -->
+          <div class="flex items-center gap-6 pt-8 opacity-0 animate-fade-in-up stagger-5">
+            <div class="flex -space-x-4">
+              <div class="w-14 h-14 rounded-full border-4 border-zinc-900 overflow-hidden shadow-xl ring-2 ring-blue-500/20">
                 <img src="https://i.pravatar.cc/64?img=1" alt="" class="object-cover w-full h-full">
               </div>
-              <div class="w-11 h-11 bg-gradient-to-br from-zinc-600 to-zinc-700 border-2 border-zinc-900 rounded-full overflow-hidden shadow-lg">
+              <div class="w-14 h-14 rounded-full border-4 border-zinc-900 overflow-hidden shadow-xl ring-2 ring-blue-500/20">
                 <img src="https://i.pravatar.cc/64?img=2" alt="" class="object-cover w-full h-full">
               </div>
-              <div class="w-11 h-11 bg-gradient-to-br from-zinc-600 to-zinc-700 border-2 border-zinc-900 rounded-full overflow-hidden shadow-lg">
+              <div class="w-14 h-14 rounded-full border-4 border-zinc-900 overflow-hidden shadow-xl ring-2 ring-blue-500/20">
                 <img src="https://i.pravatar.cc/64?img=3" alt="" class="object-cover w-full h-full">
+              </div>
+              <div class="w-14 h-14 rounded-full border-4 border-zinc-900 bg-gradient-to-br from-blue-600 via-blue-600 to-purple-600 flex items-center justify-center shadow-xl ring-2 ring-blue-500/20">
+                <span class="text-sm font-black">50+</span>
               </div>
             </div>
             <div>
-              <div class="font-bold text-white">Trusted by 50+ Founders</div>
-              <div class="text-emerald-400 text-sm font-semibold flex items-center gap-2">
+              <div class="font-bold text-lg text-white mb-1">Trusted by 50+ Founders</div>
+              <div class="text-emerald-400 font-bold flex items-center gap-2">
                 <i class="fa-solid fa-star"></i>
-                70× Peak ROAS • $300K/mo Managed
+                <span>70× Peak ROAS • $300K/mo Managed</span>
               </div>
             </div>
           </div>
+          
         </div>
-
-        <!-- Right Column - Stats Card -->
-        <div class="hidden lg:block animate-slide-in-right">
-          <div class="glass-card rounded-3xl p-10 shadow-2xl card-glow">
-            <div class="text-center mb-8">
-              <div class="text-6xl font-black gradient-text stat-number mb-3">$50M+</div>
-              <div class="text-zinc-400 text-lg">in tracked revenue generated</div>
+        
+        <!-- Right Column - Premium Stats Card -->
+        <div class="hidden lg:block opacity-0 animate-slide-in-right stagger-3">
+          <div class="glass-premium rounded-[32px] p-10 shadow-2xl premium-border spotlight-premium">
+            
+            <!-- Main Premium Stat -->
+            <div class="text-center mb-10 pb-10 border-b border-zinc-700/50">
+              <div class="font-display font-black text-8xl gradient-premium stat-counter mb-4 leading-none">$50M+</div>
+              <div class="text-zinc-400 text-xl font-medium">in tracked revenue generated</div>
             </div>
             
-            <div class="grid grid-cols-2 gap-6 pt-6 border-t border-zinc-700/50">
-              <div class="text-center p-4 glass-card rounded-2xl">
-                <div class="text-blue-400 font-bold text-2xl mb-2">10+ Years</div>
-                <div class="text-zinc-400 text-sm">Google Ads Experience</div>
+            <!-- Premium Grid Stats -->
+            <div class="grid grid-cols-2 gap-5 mb-8">
+              <div class="glass-card rounded-3xl p-6 text-center spotlight-premium hover:scale-105 transition-all duration-300">
+                <div class="text-blue-400 font-black text-4xl mb-2 font-display">10+ Years</div>
+                <div class="text-zinc-400 text-sm font-medium">Google Ads Experience</div>
               </div>
-              <div class="text-center p-4 glass-card rounded-2xl">
-                <div class="text-emerald-400 font-bold text-2xl mb-2">Direct</div>
-                <div class="text-zinc-400 text-sm">No Agency Layers</div>
+              <div class="glass-card rounded-3xl p-6 text-center spotlight-premium hover:scale-105 transition-all duration-300">
+                <div class="text-emerald-400 font-black text-4xl mb-2 font-display">Direct</div>
+                <div class="text-zinc-400 text-sm font-medium">No Agency Layers</div>
               </div>
             </div>
-
-            <div class="mt-6 pt-6 border-t border-zinc-700/50">
-              <div class="flex items-center justify-between text-sm">
-                <div class="flex items-center gap-2">
+            
+            <!-- Premium Features List -->
+            <div class="pt-8 border-t border-zinc-700/50 space-y-4">
+              <div class="flex items-center gap-3 text-sm group">
+                <div class="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                   <i class="fa-solid fa-shield-halved text-blue-400"></i>
-                  <span class="text-zinc-400">Proven System</span>
                 </div>
-                <div class="flex items-center gap-2">
+                <span class="text-zinc-300 font-medium">Proven System</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm group">
+                <div class="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                   <i class="fa-solid fa-bolt text-emerald-400"></i>
-                  <span class="text-zinc-400">Fast Results</span>
                 </div>
+                <span class="text-zinc-300 font-medium">Fast Results</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm group">
+                <div class="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-user-check text-purple-400"></i>
+                </div>
+                <span class="text-zinc-300 font-medium">Direct Access</span>
               </div>
             </div>
+            
           </div>
         </div>
+        
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- H.A.N.S Framework -->
-  <section id="framework" class="py-24 lg:py-32 bg-gradient-to-b from-zinc-900 to-black relative overflow-hidden">
-    <!-- Background decoration -->
-    <div class="absolute inset-0 opacity-5">
-      <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 50px 50px;"></div>
-    </div>
-
+  <!-- Premium H.A.N.S Framework Section -->
+  <section id="framework" class="relative py-32 lg:py-40 bg-gradient-to-b from-zinc-950 via-black to-zinc-950 overflow-hidden">
+    
+    <!-- Premium Background -->
+    <div class="absolute inset-0 grid-premium opacity-30"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-blue-950/10 via-transparent to-purple-950/10"></div>
+    
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <!-- Section Header -->
-      <div class="text-center mb-16 lg:mb-20">
-        <span class="text-blue-400 text-sm font-bold tracking-widest uppercase">Proven System</span>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black mt-4 mb-6 section-header relative inline-block">
-          What is the H.A.N.S Framework?
+      
+      <!-- Premium Section Header -->
+      <div class="text-center max-w-4xl mx-auto mb-20 reveal-element">
+        <div class="inline-flex items-center gap-3 glass-card px-6 py-3 rounded-full mb-6 shadow-xl">
+          <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+          <span class="text-sm font-bold text-blue-400 tracking-wider uppercase">Proven System</span>
+        </div>
+        <h2 class="font-display font-black text-5xl sm:text-6xl lg:text-7xl mb-8 leading-tight">
+          What is the <span class="gradient-premium">H.A.N.S</span> Framework?
         </h2>
-        <p class="mt-6 text-lg sm:text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
+        <div class="section-divider mb-8"></div>
+        <p class="text-2xl text-zinc-400 leading-relaxed font-light">
           A structured, data-driven approach to Google Ads that eliminates guesswork and maximizes ROI at every stage.
         </p>
       </div>
-
-      <!-- Framework Cards -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-        <!-- H Card -->
-        <div class="card-glow glass-card hover:bg-zinc-800/60 transition-all duration-300 rounded-3xl p-8 group transform hover:-translate-y-2">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-blue-600/20 text-blue-400 rounded-2xl flex items-center justify-center text-4xl font-black mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all shadow-lg">
-            H
-          </div>
-          <h3 class="font-bold text-2xl mb-4 text-white group-hover:text-blue-400 transition-colors">Hyper-Targeted<br>Architecture</h3>
-          <p class="text-zinc-400 leading-relaxed">Campaign structure, match types, negative keywords, and scaling architecture built for efficiency from day one.</p>
-          <div class="mt-6 pt-6 border-t border-zinc-700/50 flex items-center gap-2 text-sm text-blue-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-            <span>Learn more</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-
-        <!-- A Card -->
-        <div class="card-glow glass-card hover:bg-zinc-800/60 transition-all duration-300 rounded-3xl p-8 group transform hover:-translate-y-2">
-          <div class="w-16 h-16 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 text-emerald-400 rounded-2xl flex items-center justify-center text-4xl font-black mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all shadow-lg">
-            A
-          </div>
-          <h3 class="font-bold text-2xl mb-4 text-white group-hover:text-emerald-400 transition-colors">Analytics &<br>Attribution</h3>
-          <p class="text-zinc-400 leading-relaxed">Bulletproof GA4 + GTM tracking. Accurate conversion data that powers smart bidding and optimization.</p>
-          <div class="mt-6 pt-6 border-t border-zinc-700/50 flex items-center gap-2 text-sm text-emerald-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-            <span>Learn more</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-
-        <!-- N Card -->
-        <div class="card-glow glass-card hover:bg-zinc-800/60 transition-all duration-300 rounded-3xl p-8 group transform hover:-translate-y-2">
-          <div class="w-16 h-16 bg-gradient-to-br from-amber-500/20 to-amber-600/20 text-amber-400 rounded-2xl flex items-center justify-center text-4xl font-black mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all shadow-lg">
-            N
-          </div>
-          <h3 class="font-bold text-2xl mb-4 text-white group-hover:text-amber-400 transition-colors">Non-Stop<br>Optimization</h3>
-          <p class="text-zinc-400 leading-relaxed">Daily/weekly Kaizen-style testing, bid management, ad copy iteration, and audience refinement.</p>
-          <div class="mt-6 pt-6 border-t border-zinc-700/50 flex items-center gap-2 text-sm text-amber-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-            <span>Learn more</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-
-        <!-- S Card -->
-        <div class="card-glow glass-card hover:bg-zinc-800/60 transition-all duration-300 rounded-3xl p-8 group transform hover:-translate-y-2">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-purple-600/20 text-purple-400 rounded-2xl flex items-center justify-center text-4xl font-black mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all shadow-lg">
-            S
-          </div>
-          <h3 class="font-bold text-2xl mb-4 text-white group-hover:text-purple-400 transition-colors">Scale<br>Systems</h3>
-          <p class="text-zinc-400 leading-relaxed">Systems to safely scale spend while protecting ROAS. Performance Max, Shopping, and multi-channel synergy.</p>
-          <div class="mt-6 pt-6 border-t border-zinc-700/50 flex items-center gap-2 text-sm text-purple-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-            <span>Learn more</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Results / Social Proof -->
-  <section id="results" class="py-24 lg:py-32 bg-black relative overflow-hidden">
-    <!-- Gradient overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/5 to-transparent"></div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-      <span class="text-blue-400 text-sm font-bold tracking-widest uppercase">Performance Track Record</span>
-      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black mt-4 mb-6">Real Results. Real Revenue.</h2>
-      <p class="text-lg sm:text-xl text-zinc-400 mb-16 max-w-3xl mx-auto">
-        Delivering consistent performance for US-based founders and operators
-      </p>
-
-      <!-- Stats Grid -->
-      <div class="grid sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-        <div class="card-glow glass-card rounded-3xl p-10 lg:p-12 transform hover:scale-105 transition-all group">
-          <div class="text-6xl lg:text-7xl font-black gradient-text stat-number mb-4 group-hover:scale-110 transition-transform">70×</div>
-          <div class="text-zinc-400 text-lg font-medium">Peak ROAS Achieved</div>
-          <div class="mt-4 pt-4 border-t border-zinc-700/50 text-sm text-zinc-500">
-            <i class="fa-solid fa-trophy text-emerald-400 mr-2"></i>
-            Industry-leading efficiency
-          </div>
-        </div>
-
-        <div class="card-glow glass-card rounded-3xl p-10 lg:p-12 transform hover:scale-105 transition-all group">
-          <div class="text-6xl lg:text-7xl font-black gradient-text stat-number mb-4 group-hover:scale-110 transition-transform">$300K</div>
-          <div class="text-zinc-400 text-lg font-medium">Monthly Ad Spend Managed</div>
-          <div class="mt-4 pt-4 border-t border-zinc-700/50 text-sm text-zinc-500">
-            <i class="fa-solid fa-chart-line text-blue-400 mr-2"></i>
-            Proven at scale
-          </div>
-        </div>
-
-        <div class="card-glow glass-card rounded-3xl p-10 lg:p-12 transform hover:scale-105 transition-all group">
-          <div class="text-6xl lg:text-7xl font-black gradient-text stat-number mb-4 group-hover:scale-110 transition-transform">50M+</div>
-          <div class="text-zinc-400 text-lg font-medium">Revenue Generated</div>
-          <div class="mt-4 pt-4 border-t border-zinc-700/50 text-sm text-zinc-500">
-            <i class="fa-solid fa-fire text-orange-400 mr-2"></i>
-            Tracked & verified
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA to Full Results -->
-      <a href="https://hanslacida.com/results" 
-         class="inline-flex items-center gap-3 glass-card hover:bg-zinc-800/60 transition-all px-8 py-5 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl group">
-        See Full Case Studies & Results
-        <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
-      </a>
-    </div>
-  </section>
-
-  <!-- About / Why Me -->
-  <section id="about" class="py-24 lg:py-32 bg-gradient-to-b from-zinc-900 to-black">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        <!-- Image Column -->
-        <div class="lg:col-span-5">
-          <div class="relative group">
-            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur-lg opacity-25 group-hover:opacity-50 transition"></div>
-            <img src="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" 
-                 alt="Hans Lacida - Google Ads Expert" 
-                 class="relative rounded-3xl shadow-2xl w-full">
-          </div>
-        </div>
-
-        <!-- Content Column -->
-        <div class="lg:col-span-7 space-y-8">
-          <div>
-            <span class="text-blue-400 text-sm font-bold tracking-widest uppercase">About Your Specialist</span>
-            <h2 class="text-4xl sm:text-5xl font-black mt-4 mb-6 leading-tight">
-              Hi, I'm Hans<br><span class="gradient-text">"Dexter"</span> Lacida
-            </h2>
-          </div>
-
-          <p class="text-xl text-zinc-300 leading-relaxed">
-            Veteran Google Ads specialist with over a decade of hands-on experience. I work directly with founders — <span class="text-blue-400 font-semibold">no agency middlemen</span>, no fluff reports, just execution that moves the needle.
-          </p>
-
-          <!-- Feature List -->
-          <ul class="space-y-5">
-            <li class="flex gap-4 items-start group">
-              <div class="w-6 h-6 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
-              </div>
-              <span class="text-lg text-zinc-300">Direct fractional PPC direction for scaling brands</span>
-            </li>
-            <li class="flex gap-4 items-start group">
-              <div class="w-6 h-6 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
-              </div>
-              <span class="text-lg text-zinc-300">Expert in Search, Shopping, Performance Max & advanced tracking</span>
-            </li>
-            <li class="flex gap-4 items-start group">
-              <div class="w-6 h-6 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
-              </div>
-              <span class="text-lg text-zinc-300">US timezone overlap • Philippines-based efficiency</span>
-            </li>
-          </ul>
-
-          <!-- CTA Button -->
-          <a href="https://hanslacida.com/work-with-me" 
-             class="inline-flex items-center gap-3 bg-white text-zinc-950 font-bold px-8 py-5 rounded-2xl hover:bg-zinc-200 transition-all shadow-xl hover:shadow-2xl hover:scale-105 transform group">
-            <span>Work with me</span>
-            <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA / Contact Form -->
-  <section id="contact" class="py-24 lg:py-32 bg-gradient-to-b from-black via-zinc-950 to-black border-t border-zinc-800/50 relative overflow-hidden">
-    <!-- Background decoration -->
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600 rounded-full blur-3xl"></div>
-    </div>
-
-    <div class="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
-      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-        Ready to scale your<br>Google Ads <span class="gradient-text">profitably</span>?
-      </h2>
-      <p class="text-xl text-zinc-400 mb-12 leading-relaxed">
-        Let's apply the H.A.N.S Framework to your account.<br>
-        <span class="text-blue-400 font-semibold">Limited slots available for new clients.</span>
-      </p>
       
-      <!-- Contact Form -->
-      <form class="glass-card p-8 lg:p-12 rounded-3xl shadow-2xl space-y-6">
-        <div class="grid sm:grid-cols-2 gap-6">
-          <input type="text" 
-                 placeholder="Your Name" 
-                 required
-                 class="form-input bg-zinc-800/80 border border-zinc-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl px-6 py-4 outline-none transition-all text-white placeholder-zinc-500">
-          <input type="email" 
-                 placeholder="Business Email" 
-                 required
-                 class="form-input bg-zinc-800/80 border border-zinc-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl px-6 py-4 outline-none transition-all text-white placeholder-zinc-500">
+      <!-- Premium Framework Cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- H Card -->
+        <div class="reveal-element group glass-card rounded-[32px] p-10 hover:bg-zinc-900/70 transition-all duration-500 premium-border spotlight-premium glow-premium">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-blue-600/20 rounded-full blur-3xl -z-10 group-hover:bg-blue-600/30 transition-all duration-500"></div>
+          <div class="w-20 h-20 bg-gradient-to-br from-blue-500/30 via-blue-600/20 to-blue-700/30 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl shadow-blue-600/30">
+            <span class="font-display font-black text-5xl text-blue-400">H</span>
+          </div>
+          <h3 class="font-display font-bold text-3xl mb-4 text-white group-hover:text-blue-400 transition-colors duration-300 leading-tight">
+            Hyper-Targeted<br>Architecture
+          </h3>
+          <p class="text-zinc-400 leading-relaxed mb-6 text-base">
+            Campaign structure, match types, negative keywords, and scaling architecture built for efficiency from day one.
+          </p>
+          <div class="flex items-center gap-2 text-sm text-blue-400 font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+            <span>Core Foundation</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
         </div>
         
-        <input type="text" 
-               placeholder="Current Monthly Ad Spend (optional)" 
-               class="form-input w-full bg-zinc-800/80 border border-zinc-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl px-6 py-4 outline-none transition-all text-white placeholder-zinc-500">
+        <!-- A Card -->
+        <div class="reveal-element group glass-card rounded-[32px] p-10 hover:bg-zinc-900/70 transition-all duration-500 premium-border spotlight-premium glow-premium" style="animation-delay: 0.1s;">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-emerald-600/20 rounded-full blur-3xl -z-10 group-hover:bg-emerald-600/30 transition-all duration-500"></div>
+          <div class="w-20 h-20 bg-gradient-to-br from-emerald-500/30 via-emerald-600/20 to-emerald-700/30 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl shadow-emerald-600/30">
+            <span class="font-display font-black text-5xl text-emerald-400">A</span>
+          </div>
+          <h3 class="font-display font-bold text-3xl mb-4 text-white group-hover:text-emerald-400 transition-colors duration-300 leading-tight">
+            Analytics &<br>Attribution
+          </h3>
+          <p class="text-zinc-400 leading-relaxed mb-6 text-base">
+            Bulletproof GA4 + GTM tracking. Accurate conversion data that powers smart bidding and optimization.
+          </p>
+          <div class="flex items-center gap-2 text-sm text-emerald-400 font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+            <span>Data Precision</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
         
-        <textarea placeholder="Tell me about your biggest Google Ads challenge..." 
-                  rows="5"
-                  required
-                  class="form-input w-full bg-zinc-800/80 border border-zinc-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl px-6 py-4 outline-none transition-all resize-none text-white placeholder-zinc-500"></textarea>
+        <!-- N Card -->
+        <div class="reveal-element group glass-card rounded-[32px] p-10 hover:bg-zinc-900/70 transition-all duration-500 premium-border spotlight-premium glow-premium" style="animation-delay: 0.2s;">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-amber-600/20 rounded-full blur-3xl -z-10 group-hover:bg-amber-600/30 transition-all duration-500"></div>
+          <div class="w-20 h-20 bg-gradient-to-br from-amber-500/30 via-amber-600/20 to-amber-700/30 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl shadow-amber-600/30">
+            <span class="font-display font-black text-5xl text-amber-400">N</span>
+          </div>
+          <h3 class="font-display font-bold text-3xl mb-4 text-white group-hover:text-amber-400 transition-colors duration-300 leading-tight">
+            Non-Stop<br>Optimization
+          </h3>
+          <p class="text-zinc-400 leading-relaxed mb-6 text-base">
+            Daily/weekly Kaizen-style testing, bid management, ad copy iteration, and audience refinement.
+          </p>
+          <div class="flex items-center gap-2 text-sm text-amber-400 font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+            <span>Continuous Improvement</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+        
+        <!-- S Card -->
+        <div class="reveal-element group glass-card rounded-[32px] p-10 hover:bg-zinc-900/70 transition-all duration-500 premium-border spotlight-premium glow-premium" style="animation-delay: 0.3s;">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-purple-600/20 rounded-full blur-3xl -z-10 group-hover:bg-purple-600/30 transition-all duration-500"></div>
+          <div class="w-20 h-20 bg-gradient-to-br from-purple-500/30 via-purple-600/20 to-purple-700/30 rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl shadow-purple-600/30">
+            <span class="font-display font-black text-5xl text-purple-400">S</span>
+          </div>
+          <h3 class="font-display font-bold text-3xl mb-4 text-white group-hover:text-purple-400 transition-colors duration-300 leading-tight">
+            Scale<br>Systems
+          </h3>
+          <p class="text-zinc-400 leading-relaxed mb-6 text-base">
+            Systems to safely scale spend while protecting ROAS. Performance Max, Shopping, and multi-channel synergy.
+          </p>
+          <div class="flex items-center gap-2 text-sm text-purple-400 font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+            <span>Growth Engine</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Premium Results Section -->
+  <section id="results" class="relative py-32 lg:py-40 bg-black overflow-hidden">
+    
+    <!-- Premium Background -->
+    <div class="absolute inset-0">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[150px] float-slow"></div>
+      <div class="absolute inset-0 grid-premium opacity-20"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Premium Section Header -->
+      <div class="text-center max-w-4xl mx-auto mb-20 reveal-element">
+        <div class="inline-flex items-center gap-3 glass-card px-6 py-3 rounded-full mb-6 shadow-xl">
+          <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+          <span class="text-sm font-bold text-emerald-400 tracking-wider uppercase">Performance Track Record</span>
+        </div>
+        <h2 class="font-display font-black text-5xl sm:text-6xl lg:text-7xl mb-8 leading-tight">
+          Real Results. <span class="gradient-premium">Real Revenue.</span>
+        </h2>
+        <div class="section-divider mb-8"></div>
+        <p class="text-2xl text-zinc-400 leading-relaxed font-light">
+          Delivering consistent performance for US-based founders and operators
+        </p>
+      </div>
+      
+      <!-- Premium Stats Grid -->
+      <div class="grid sm:grid-cols-3 gap-8 mb-16">
+        
+        <div class="reveal-element group glass-card rounded-[32px] p-12 text-center premium-border spotlight-premium glow-premium hover:scale-105 transition-all duration-500">
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative">
+            <div class="font-display font-black text-7xl lg:text-8xl gradient-premium stat-counter mb-4 leading-none">70×</div>
+            <div class="text-zinc-400 text-xl font-semibold mb-6">Peak ROAS Achieved</div>
+            <div class="pt-6 border-t border-zinc-800/50">
+              <div class="inline-flex items-center gap-2 text-sm text-emerald-400 font-bold">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Industry-leading efficiency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reveal-element group glass-card rounded-[32px] p-12 text-center premium-border spotlight-premium glow-premium hover:scale-105 transition-all duration-500" style="animation-delay: 0.1s;">
+          <div class="absolute inset-0 bg-gradient-to-br from-emerald-600/5 to-transparent rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative">
+            <div class="font-display font-black text-7xl lg:text-8xl gradient-premium stat-counter mb-4 leading-none">$300K</div>
+            <div class="text-zinc-400 text-xl font-semibold mb-6">Monthly Ad Spend Managed</div>
+            <div class="pt-6 border-t border-zinc-800/50">
+              <div class="inline-flex items-center gap-2 text-sm text-blue-400 font-bold">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Proven at scale</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reveal-element group glass-card rounded-[32px] p-12 text-center premium-border spotlight-premium glow-premium hover:scale-105 transition-all duration-500" style="animation-delay: 0.2s;">
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="relative">
+            <div class="font-display font-black text-7xl lg:text-8xl gradient-premium stat-counter mb-4 leading-none">50M+</div>
+            <div class="text-zinc-400 text-xl font-semibold mb-6">Revenue Generated</div>
+            <div class="pt-6 border-t border-zinc-800/50">
+              <div class="inline-flex items-center gap-2 text-sm text-orange-400 font-bold">
+                <i class="fa-solid fa-fire"></i>
+                <span>Tracked & verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Premium CTA -->
+      <div class="text-center reveal-element" style="animation-delay: 0.3s;">
+        <a href="https://hanslacida.com/results" 
+           class="group inline-flex items-center gap-4 glass-premium hover:bg-zinc-800/80 px-10 py-6 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 spotlight-premium">
+          <span>See Full Case Studies & Results</span>
+          <i class="fa-solid fa-arrow-right group-hover:translate-x-3 transition-transform duration-300"></i>
+        </a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Premium About Section -->
+  <section id="about" class="relative py-32 lg:py-40 bg-gradient-to-b from-zinc-950 via-black to-zinc-950 overflow-hidden">
+    
+    <!-- Premium Background -->
+    <div class="absolute inset-0 grid-premium opacity-20"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- Premium Image Column -->
+        <div class="lg:col-span-5 reveal-element">
+          <div class="relative group">
+            <div class="absolute -inset-6 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-pink-600/30 rounded-[40px] blur-3xl opacity-50 group-hover:opacity-75 transition-opacity duration-700 group-hover:animate-pulse-glow"></div>
+            <div class="relative glass-card rounded-[40px] p-3 shadow-2xl">
+              <div class="relative overflow-hidden rounded-[32px]">
+                <img src="https://i.ibb.co/mF2r4NLs/Gemini-Generated-Image-410uha410uha410u.png" 
+                     alt="Hans Lacida - Google Ads Expert" 
+                     class="w-full shadow-2xl transform group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Premium Content Column -->
+        <div class="lg:col-span-7 space-y-10 reveal-element" style="animation-delay: 0.2s;">
+          
+          <div>
+            <div class="inline-flex items-center gap-3 glass-card px-6 py-3 rounded-full mb-6 shadow-xl">
+              <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+              <span class="text-sm font-bold text-blue-400 tracking-wider uppercase">About Your Specialist</span>
+            </div>
+            <h2 class="font-display font-black text-5xl sm:text-6xl mb-6 leading-tight">
+              Hi, I'm Hans<br>
+              <span class="gradient-premium">"Dexter"</span> Lacida
+            </h2>
+            <div class="flex gap-3 mb-6">
+              <div class="h-1.5 w-24 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 rounded-full shadow-lg shadow-blue-500/50"></div>
+              <div class="h-1.5 w-16 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 rounded-full shadow-lg shadow-purple-500/50"></div>
+            </div>
+          </div>
+          
+          <p class="text-2xl text-zinc-300 leading-relaxed font-light">
+            Veteran Google Ads specialist with over a decade of hands-on experience. I work directly with founders — <span class="text-blue-400 font-semibold bg-blue-400/10 px-2 rounded">no agency middlemen</span>, no fluff reports, just execution that moves the needle.
+          </p>
+          
+          <!-- Premium Features List -->
+          <div class="space-y-6">
+            <div class="flex gap-5 items-start group">
+              <div class="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-emerald-500/30 via-emerald-600/20 to-emerald-700/30 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-xl shadow-emerald-600/20">
+                <i class="fa-solid fa-check text-emerald-400 text-xl"></i>
+              </div>
+              <div>
+                <div class="font-bold text-xl text-white mb-2">Direct fractional PPC direction for scaling brands</div>
+                <div class="text-zinc-400 text-base leading-relaxed">No middlemen, no junior account managers—just strategic execution that drives revenue.</div>
+              </div>
+            </div>
+            
+            <div class="flex gap-5 items-start group">
+              <div class="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-blue-500/30 via-blue-600/20 to-blue-700/30 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-xl shadow-blue-600/20">
+                <i class="fa-solid fa-check text-blue-400 text-xl"></i>
+              </div>
+              <div>
+                <div class="font-bold text-xl text-white mb-2">Expert in Search, Shopping, Performance Max & advanced tracking</div>
+                <div class="text-zinc-400 text-base leading-relaxed">Full-stack Google Ads expertise with bulletproof GA4 and GTM implementation.</div>
+              </div>
+            </div>
+            
+            <div class="flex gap-5 items-start group">
+              <div class="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-purple-500/30 via-purple-600/20 to-purple-700/30 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-xl shadow-purple-600/20">
+                <i class="fa-solid fa-check text-purple-400 text-xl"></i>
+              </div>
+              <div>
+                <div class="font-bold text-xl text-white mb-2">US timezone overlap • Philippines-based efficiency</div>
+                <div class="text-zinc-400 text-base leading-relaxed">Available during US business hours with cost-effective pricing.</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Premium CTA Button -->
+          <div class="pt-6">
+            <a href="https://hanslacida.com/work-with-me" 
+               class="group inline-flex items-center gap-4 bg-white text-zinc-950 font-black px-10 py-6 rounded-2xl hover:bg-zinc-100 transition-all duration-500 shadow-2xl hover:shadow-3xl hover:scale-105">
+              <span class="text-lg">Work with me</span>
+              <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Contact Section -->
+  <section id="contact" class="relative py-32 lg:py-40 bg-gradient-to-b from-black via-zinc-950 to-black overflow-hidden">
+    
+    <!-- Premium Background -->
+    <div class="absolute inset-0">
+      <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-600/15 rounded-full blur-[150px] float-slow"></div>
+      <div class="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-purple-600/15 rounded-full blur-[150px] float-slow" style="animation-delay: 5s;"></div>
+      <div class="absolute inset-0 grid-premium opacity-20"></div>
+    </div>
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Premium Header -->
+      <div class="text-center mb-16 reveal-element">
+        <div class="inline-flex items-center gap-3 glass-card px-6 py-3 rounded-full mb-6 shadow-xl">
+          <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+          <span class="text-sm font-bold text-blue-400 tracking-wider uppercase">Let's Talk Growth</span>
+        </div>
+        <h2 class="font-display font-black text-5xl sm:text-6xl lg:text-7xl mb-6 leading-tight">
+          Ready to scale your<br>
+          Google Ads <span class="gradient-premium">profitably</span>?
+        </h2>
+        <div class="section-divider mb-8"></div>
+        <p class="text-2xl text-zinc-400 leading-relaxed font-light">
+          Let's apply the H.A.N.S Framework to your account.<br>
+          <span class="text-blue-400 font-semibold">Limited slots available for new clients.</span>
+        </p>
+      </div>
+      
+      <!-- Premium Contact Form -->
+      <form class="reveal-element glass-premium rounded-[40px] p-10 lg:p-16 shadow-2xl space-y-8" style="animation-delay: 0.2s;">
+        
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <input type="text" 
+                   placeholder="Your Name" 
+                   required
+                   class="w-full bg-zinc-900/70 border-2 border-zinc-800/50 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-2xl px-7 py-5 outline-none transition-all duration-300 text-white placeholder-zinc-500 font-medium hover:border-zinc-700">
+          </div>
+          <div>
+            <input type="email" 
+                   placeholder="Business Email" 
+                   required
+                   class="w-full bg-zinc-900/70 border-2 border-zinc-800/50 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-2xl px-7 py-5 outline-none transition-all duration-300 text-white placeholder-zinc-500 font-medium hover:border-zinc-700">
+          </div>
+        </div>
+        
+        <div>
+          <input type="text" 
+                 placeholder="Current Monthly Ad Spend (optional)" 
+                 class="w-full bg-zinc-900/70 border-2 border-zinc-800/50 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-2xl px-7 py-5 outline-none transition-all duration-300 text-white placeholder-zinc-500 font-medium hover:border-zinc-700">
+        </div>
+        
+        <div>
+          <textarea placeholder="Tell me about your biggest Google Ads challenge..." 
+                    rows="6"
+                    required
+                    class="w-full bg-zinc-900/70 border-2 border-zinc-800/50 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 rounded-2xl px-7 py-5 outline-none transition-all duration-300 resize-none text-white placeholder-zinc-500 font-medium hover:border-zinc-700"></textarea>
+        </div>
         
         <button type="submit"
-                class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all py-5 rounded-xl font-bold text-lg shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-105 transform group">
-          <span class="flex items-center justify-center gap-3">
-            Apply for Framework Consultation
-            <i class="fa-solid fa-paper-plane group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                class="group relative w-full bg-gradient-to-r from-blue-600 via-blue-600 to-blue-700 hover:from-blue-700 hover:via-blue-700 hover:to-blue-800 text-white font-black py-6 rounded-2xl shadow-2xl shadow-blue-600/40 hover:shadow-blue-600/60 transition-all duration-500 hover:scale-105 overflow-hidden">
+          <span class="relative z-10 flex items-center justify-center gap-4 text-lg">
+            <span>Apply for Framework Consultation</span>
+            <i class="fa-solid fa-paper-plane group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></i>
           </span>
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
         </button>
+        
+        <p class="text-center text-sm text-zinc-500 flex items-center justify-center gap-3 pt-4">
+          <i class="fa-solid fa-clock text-blue-400"></i>
+          <span>I personally review every application. Expect a reply within 48 hours.</span>
+        </p>
+        
       </form>
       
-      <p class="text-sm text-zinc-500 mt-8 flex items-center justify-center gap-2">
-        <i class="fa-solid fa-clock"></i>
-        I personally review every application. Expect a reply within 48 hours.
-      </p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-black py-12 border-t border-zinc-900">
+  <!-- Premium Footer -->
+  <footer class="relative bg-black py-16 border-t border-zinc-900/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center space-y-4">
-        <div class="flex items-center justify-center gap-6 text-zinc-500">
-          <a href="https://linkedin.com/in/hanslacida" target="_blank" class="hover:text-blue-400 transition-colors">
-            <i class="fa-brands fa-linkedin text-2xl"></i>
-          </a>
-          <a href="https://twitter.com/hanslacida" target="_blank" class="hover:text-blue-400 transition-colors">
-            <i class="fa-brands fa-twitter text-2xl"></i>
-          </a>
+      
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-xl shadow-blue-600/30">
+              <span class="text-white font-display font-black text-xl">H</span>
+            </div>
+            <div>
+              <div class="font-display font-bold text-xl">PPC Hans</div>
+              <div class="text-xs text-zinc-500">Google Ads Specialist</div>
+            </div>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Battle-tested Google Ads strategies delivering $50M+ in tracked revenue for ambitious founders.
+          </p>
         </div>
-        <div class="text-zinc-500 text-sm">
-          © 2026 PPC Hans • Hans Lacida. All Rights Reserved.
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-bold text-white mb-6 text-lg">Quick Links</h3>
+          <div class="space-y-3">
+            <a href="#framework" class="block text-zinc-400 hover:text-blue-400 text-sm transition-colors duration-300 hover:translate-x-1 transform">Framework</a>
+            <a href="#results" class="block text-zinc-400 hover:text-blue-400 text-sm transition-colors duration-300 hover:translate-x-1 transform">Results</a>
+            <a href="#about" class="block text-zinc-400 hover:text-blue-400 text-sm transition-colors duration-300 hover:translate-x-1 transform">About Hans</a>
+            <a href="#contact" class="block text-zinc-400 hover:text-blue-400 text-sm transition-colors duration-300 hover:translate-x-1 transform">Contact</a>
+          </div>
         </div>
-        <div class="text-zinc-600 text-xs">
-          Built for founders who demand better Google Ads performance.
+        
+        <!-- Social -->
+        <div>
+          <h3 class="font-bold text-white mb-6 text-lg">Connect</h3>
+          <div class="flex gap-4">
+            <a href="https://linkedin.com/in/hanslacida" 
+               target="_blank"
+               class="w-12 h-12 bg-zinc-900 hover:bg-blue-600 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
+              <i class="fa-brands fa-linkedin text-xl text-zinc-400 hover:text-white transition-colors"></i>
+            </a>
+            <a href="https://twitter.com/hanslacida" 
+               target="_blank"
+               class="w-12 h-12 bg-zinc-900 hover:bg-blue-600 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
+              <i class="fa-brands fa-twitter text-xl text-zinc-400 hover:text-white transition-colors"></i>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Bottom -->
+      <div class="pt-8 border-t border-zinc-900/50">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+          <p>© 2026 PPC Hans • Hans Lacida. All Rights Reserved.</p>
+          <p>Built for founders who demand better Google Ads performance.</p>
         </div>
       </div>
+      
     </div>
   </footer>
 
+  <!-- Premium JavaScript -->
   <script>
-    // Mobile menu toggle
+    // Mobile menu toggle with premium animation
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-
+    
     mobileBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
       const icon = mobileBtn.querySelector('i');
       icon.classList.toggle('fa-bars');
       icon.classList.toggle('fa-xmark');
+      
+      if (!mobileMenu.classList.contains('hidden')) {
+        mobileMenu.style.animation = 'fadeIn 0.3s ease-out';
+      }
     });
-
-    // Smooth scroll behavior for anchor links
+    
+    // Close mobile menu on link click
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const icon = mobileBtn.querySelector('i');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      });
+    });
+    
+    // Premium navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        navbar.classList.add('glass-premium', 'shadow-2xl');
+        navbar.style.backdropFilter = 'blur(20px)';
+      } else {
+        navbar.classList.remove('glass-premium', 'shadow-2xl');
+        navbar.style.backdropFilter = 'none';
+      }
+      
+      lastScroll = currentScroll;
+    });
+    
+    // Premium reveal on scroll with Intersection Observer
+    const revealElements = document.querySelectorAll('.reveal-element');
+    
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -80px 0px'
+    });
+    
+    revealElements.forEach(el => {
+      revealObserver.observe(el);
+    });
+    
+    // Premium smooth scroll with offset for fixed navbar
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
+        
         if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+          const offsetTop = target.offsetTop - 80;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
           });
-          // Close mobile menu if open
-          mobileMenu.classList.add('hidden');
-          const icon = mobileBtn.querySelector('i');
-          icon.classList.remove('fa-xmark');
-          icon.classList.add('fa-bars');
         }
       });
     });
-
-    // Navbar background on scroll
-    const navbar = document.querySelector('nav');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('shadow-lg', 'shadow-black/20');
-      } else {
-        navbar.classList.remove('shadow-lg', 'shadow-black/20');
+    
+    // Premium cursor trail effect (optional - can be removed if too much)
+    let cursorTrail = [];
+    const maxTrailLength = 10;
+    
+    document.addEventListener('mousemove', (e) => {
+      if (window.innerWidth > 1024) { // Only on desktop
+        cursorTrail.push({ x: e.clientX, y: e.clientY, time: Date.now() });
+        
+        if (cursorTrail.length > maxTrailLength) {
+          cursorTrail.shift();
+        }
       }
     });
-
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
+    
+    // Premium parallax effect for hero background
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const parallaxElements = document.querySelectorAll('.hero-premium');
+      
+      parallaxElements.forEach(el => {
+        const speed = 0.5;
+        el.style.backgroundPositionY = -(scrolled * speed) + 'px';
       });
-    }, observerOptions);
-
-    // Observe sections for scroll animations
-    document.querySelectorAll('section').forEach(section => {
-      section.style.opacity = '0';
-      section.style.transform = 'translateY(20px)';
-      section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-      observer.observe(section);
+    });
+    
+    // Add loading animation on page load
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease-in';
+      
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
     });
   </script>
+
 </body>
 </html>

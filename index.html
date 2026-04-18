@@ -1,72 +1,325 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ETDSDDFTB5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETDSDDFTB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ETDSDDFTB5');
+  </script>
 
-  gtag('config', 'G-ETDSDDFTB5');
-</script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>H.A.N.S Google Ads Framework | PPC Hans Lacida</title>
-    <meta name="description" content="The H.A.N.S Google Ads Framework by PPC Hans Lacida — a battle-tested strategy generating over $50M in revenue. Scale your growth with precision, data, and experience." />
-    <meta name="keywords" content="PPC Hans, PPC Hans Lacida, PPC Hanzel, PPC Hanz, PPC Lacida, Hans Framework, Hans Google Framework, Google Ads Expert, Paid Media Consultant, PPC Strategy, Fractional PPC Director, Google Ads Consultant, Hanzel Lacida, PPC Philippines, Paid Ads Strategist" />
-    <meta name="author" content="Hans Lacida" />
+  <title>H.A.N.S Google Ads Framework | PPC Hans Lacida</title>
+  <meta name="description" content="The H.A.N.S Google Ads Framework by PPC Hans Lacida — battle-tested strategy generating over $50M in revenue. Scale your growth with precision, data, and 10+ years of expertise." />
+  <meta name="keywords" content="PPC Hans, PPC Hans Lacida, Google Ads Expert, Paid Media Consultant, PPC Strategy, Fractional PPC Director, Google Ads Consultant, H.A.N.S Framework, PPC Philippines" />
+  <meta name="author" content="Hans Lacida" />
 
-    <!-- Robots & AI Crawlers -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="googlebot" content="index,follow" />
-    <meta name="bingbot" content="index,follow" />
-    <meta name="ai-bot" content="all" />
-    <meta name="generator" content="React + Vite" />
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ppchans.com/" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://ppchans.com/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="H.A.N.S Google Ads Framework | PPC Hans Lacida" />
+  <meta property="og:description" content="Proven Google Ads system delivering $50M+ revenue. Trusted by founders who want results, not just clicks." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ppchans.com/" />
+  <meta property="og:image" content="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" />
+  <meta property="og:site_name" content="PPC Hans" />
 
-    <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:title" content="H.A.N.S Google Ads Framework | PPC Hans Lacida" />
-    <meta property="og:description" content="PPC Hans Lacida’s Google Ads framework delivers $50M+ in revenue. Learn how the H.A.N.S system helps founders scale smart." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ppchans.com/" />
-    <meta property="og:image" content="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" />
-    <meta property="og:site_name" content="PPC Hans" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="H.A.N.S Google Ads Framework | PPC Hans Lacida" />
+  <meta name="twitter:description" content="Battle-tested Google Ads strategy generating over $50M in revenue." />
+  <meta name="twitter:image" content="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" />
+  <meta name="twitter:creator" content="@hanslacida" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="H.A.N.S Google Ads Framework | PPC Hans" />
-    <meta name="twitter:description" content="Discover the Google Ads strategy trusted by founders. PPC Hans Lacida’s H.A.N.S Framework drives results, not just clicks." />
-    <meta name="twitter:image" content="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" />
-    <meta name="twitter:creator" content="@hanslacida" />
+  <!-- Favicon -->
+  <link rel="icon" href="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" type="image/webp" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" />
+  <!-- Tailwind CSS CDN (for standalone use) - Replace with build in production -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Schema Markup for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "PPC Hans – H.A.N.S Google Ads Framework",
-      "url": "https://ppchans.com/",
-      "author": {
-        "@type": "Person",
-        "name": "Hans Lacida"
-      },
-      "description": "The H.A.N.S Framework by PPC Hans Lacida is a proven Google Ads strategy system trusted by 50+ clients and responsible for $50M+ in ad revenue.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Zeldigital"
+  <script>
+    tailwind.config = {
+      content: [],
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
       }
     }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  </script>
+
+  <style>
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-header {
+      position: relative;
+    }
+    .section-header::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, #3b82f6, #60a5fa);
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
+    <div class="max-w-screen-xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">H</div>
+        <div>
+          <span class="font-semibold text-2xl tracking-tight">PPC Hans</span>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#framework" class="hover:text-blue-400 transition">The H.A.N.S Framework</a>
+        <a href="#results" class="hover:text-blue-400 transition">Results</a>
+        <a href="#about" class="hover:text-blue-400 transition">About Hans</a>
+      </div>
+
+      <a href="#contact" 
+         class="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-2xl font-semibold text-sm flex items-center gap-2">
+        <i class="fa-solid fa-rocket"></i>
+        Book a Strategy Call
+      </a>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 py-4">
+      <div class="flex flex-col px-6 gap-4 text-sm font-medium">
+        <a href="#framework" class="py-2">The H.A.N.S Framework</a>
+        <a href="#results" class="py-2">Results</a>
+        <a href="#about" class="py-2">About Hans</a>
+        <a href="#contact" class="py-2 text-blue-400">Book Strategy Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-bg min-h-screen flex items-center">
+    <div class="max-w-screen-xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-5 py-2 rounded-3xl text-sm border border-white/20">
+          <span class="text-emerald-400">●</span>
+          10+ Years • $50M+ Revenue Generated
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight tracking-tighter">
+          The <span class="text-blue-400">H.A.N.S</span> Google Ads Framework
+        </h1>
+
+        <p class="text-xl text-zinc-300 max-w-lg">
+          Battle-tested system that scales Google Ads profitably. No fluff. No agency overhead. Just predictable growth for founders who want real results.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" 
+             class="bg-blue-600 hover:bg-blue-700 transition-all px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 text-lg">
+            Get Your Free Framework Audit
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          
+          <a href="#results" 
+             class="border border-zinc-700 hover:border-zinc-500 transition-all px-8 py-4 rounded-2xl font-medium flex items-center gap-3">
+            See $50M+ Proof
+          </a>
+        </div>
+
+        <div class="flex items-center gap-8 text-sm pt-6">
+          <div class="flex -space-x-4">
+            <div class="w-8 h-8 bg-zinc-700 border-2 border-zinc-900 rounded-full overflow-hidden">
+              <img src="https://i.pravatar.cc/64?img=1" alt="" class="object-cover">
+            </div>
+            <div class="w-8 h-8 bg-zinc-700 border-2 border-zinc-900 rounded-full overflow-hidden">
+              <img src="https://i.pravatar.cc/64?img=2" alt="" class="object-cover">
+            </div>
+            <div class="w-8 h-8 bg-zinc-700 border-2 border-zinc-900 rounded-full overflow-hidden">
+              <img src="https://i.pravatar.cc/64?img=3" alt="" class="object-cover">
+            </div>
+          </div>
+          <div>
+            <div class="font-semibold">Trusted by 50+ Founders</div>
+            <div class="text-emerald-400 text-xs">70× Peak ROAS • $300K/mo Managed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:block">
+        <div class="bg-zinc-900/80 backdrop-blur-xl border border-zinc-700 rounded-3xl p-8 shadow-2xl">
+          <div class="text-center mb-6">
+            <div class="text-4xl font-bold text-emerald-400">$50M+</div>
+            <div class="text-zinc-400">in tracked revenue generated</div>
+          </div>
+          <div class="grid grid-cols-2 gap-6 text-center text-sm">
+            <div>
+              <div class="text-blue-400 font-semibold">10+ Years</div>
+              <div class="text-zinc-500">Google Ads Experience</div>
+            </div>
+            <div>
+              <div class="text-blue-400 font-semibold">No Agency Layers</div>
+              <div class="text-zinc-500">Direct Specialist Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- H.A.N.S Framework -->
+  <section id="framework" class="py-24 bg-zinc-900">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-blue-400 text-sm font-medium tracking-widest">PROVEN SYSTEM</span>
+        <h2 class="text-4xl font-bold mt-3 section-header">What is the H.A.N.S Framework?</h2>
+        <p class="mt-4 text-zinc-400 max-w-2xl mx-auto">
+          A structured, data-driven approach to Google Ads that eliminates guesswork and maximizes ROI at every stage.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Repeat for H, A, N, S with icons/descriptions -->
+        <div class="bg-zinc-800/50 border border-zinc-700 hover:border-blue-500/50 transition-all rounded-3xl p-8 group">
+          <div class="w-14 h-14 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">H</div>
+          <h3 class="font-semibold text-2xl mb-3">Hyper-Targeted Architecture</h3>
+          <p class="text-zinc-400">Campaign structure, match types, negative keywords, and scaling architecture built for efficiency from day one.</p>
+        </div>
+
+        <div class="bg-zinc-800/50 border border-zinc-700 hover:border-blue-500/50 transition-all rounded-3xl p-8 group">
+          <div class="w-14 h-14 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">A</div>
+          <h3 class="font-semibold text-2xl mb-3">Analytics & Attribution</h3>
+          <p class="text-zinc-400">Bulletproof GA4 + GTM tracking. Accurate conversion data that powers smart bidding and optimization.</p>
+        </div>
+
+        <div class="bg-zinc-800/50 border border-zinc-700 hover:border-blue-500/50 transition-all rounded-3xl p-8 group">
+          <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">N</div>
+          <h3 class="font-semibold text-2xl mb-3">Non-Stop Optimization</h3>
+          <p class="text-zinc-400">Daily/weekly Kaizen-style testing, bid management, ad copy iteration, and audience refinement.</p>
+        </div>
+
+        <div class="bg-zinc-800/50 border border-zinc-700 hover:border-blue-500/50 transition-all rounded-3xl p-8 group">
+          <div class="w-14 h-14 bg-purple-500/10 text-purple-400 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">S</div>
+          <h3 class="font-semibold text-2xl mb-3">Scale Systems</h3>
+          <p class="text-zinc-400">Systems to safely scale spend while protecting ROAS. Performance Max, Shopping, and multi-channel synergy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results / Social Proof -->
+  <section id="results" class="py-24 bg-black">
+    <div class="max-w-screen-xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Real Results. Real Revenue.</h2>
+      <p class="text-zinc-400 mb-12">Delivering consistent performance for US-based founders and operators</p>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
+          <div class="text-6xl font-bold text-emerald-400 mb-2">70×</div>
+          <div class="text-zinc-400">Peak ROAS Achieved</div>
+        </div>
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
+          <div class="text-6xl font-bold text-emerald-400 mb-2">$300K</div>
+          <div class="text-zinc-400">Monthly Ad Spend Managed</div>
+        </div>
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
+          <div class="text-6xl font-bold text-emerald-400 mb-2">50M+</div>
+          <div class="text-zinc-400">Revenue Generated</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Why Me -->
+  <section id="about" class="py-24 bg-zinc-900">
+    <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-12 gap-16 items-center">
+      <div class="md:col-span-5">
+        <img src="https://i.ibb.co/Dfy7Yqs3/veteran-google-ads-media-buyer.webp" 
+             alt="Hans Lacida - Google Ads Expert" 
+             class="rounded-3xl shadow-2xl">
+      </div>
+      <div class="md:col-span-7 space-y-8">
+        <h2 class="text-4xl font-bold">Hi, I'm Hans "Dexter" Lacida</h2>
+        <p class="text-lg text-zinc-300">
+          Veteran Google Ads specialist with over a decade of hands-on experience. I work directly with founders — no agency middlemen, no fluff reports, just execution that moves the needle.
+        </p>
+        <ul class="space-y-4 text-zinc-300">
+          <li class="flex gap-4"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Direct fractional PPC direction for scaling brands</li>
+          <li class="flex gap-4"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> Expert in Search, Shopping, Performance Max &amp; advanced tracking</li>
+          <li class="flex gap-4"><i class="fa-solid fa-check text-emerald-400 mt-1"></i> US timezone overlap • Philippines-based efficiency</li>
+        </ul>
+        <a href="#contact" class="inline-flex items-center gap-3 bg-white text-zinc-950 font-semibold px-8 py-4 rounded-2xl hover:bg-zinc-200 transition">
+          Work with me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="contact" class="py-24 bg-gradient-to-b from-zinc-900 to-black border-t border-zinc-800">
+    <div class="max-w-2xl mx-auto text-center px-6">
+      <h2 class="text-5xl font-bold mb-6">Ready to scale your Google Ads profitably?</h2>
+      <p class="text-xl text-zinc-400 mb-10">Let's apply the H.A.N.S Framework to your account. Limited slots available for new clients.</p>
+      
+      <form class="space-y-6 bg-zinc-900 border border-zinc-700 p-10 rounded-3xl">
+        <div class="grid md:grid-cols-2 gap-6">
+          <input type="text" placeholder="Your Name" class="bg-zinc-800 border border-zinc-700 focus:border-blue-500 rounded-2xl px-6 py-4 outline-none">
+          <input type="email" placeholder="Business Email" class="bg-zinc-800 border border-zinc-700 focus:border-blue-500 rounded-2xl px-6 py-4 outline-none">
+        </div>
+        <input type="text" placeholder="Current Monthly Ad Spend (optional)" class="w-full bg-zinc-800 border border-zinc-700 focus:border-blue-500 rounded-2xl px-6 py-4 outline-none">
+        <textarea placeholder="Tell me about your biggest Google Ads challenge..." rows="4"
+                  class="w-full bg-zinc-800 border border-zinc-700 focus:border-blue-500 rounded-2xl px-6 py-4 outline-none"></textarea>
+        
+        <button type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-700 transition py-5 rounded-2xl font-semibold text-lg">
+          Apply for Framework Consultation
+        </button>
+      </form>
+      
+      <p class="text-xs text-zinc-500 mt-8">I personally review every application. Expect a reply within 48 hours.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-12 border-t border-zinc-900">
+    <div class="max-w-screen-xl mx-auto px-6 text-center text-zinc-500 text-sm">
+      © 2026 PPC Hans • Hans Lacida. All Rights Reserved.<br>
+      Built for founders who demand better Google Ads performance.
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const icon = mobileBtn.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+  </script>
+</body>
 </html>

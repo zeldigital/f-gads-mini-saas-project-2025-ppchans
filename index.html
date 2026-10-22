@@ -53,7 +53,7 @@
   <style>
     html { scroll-behavior: smooth; overflow-x: hidden; }
     body { overflow-x: hidden; }
-
+ 
     .gradient-text {
       background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 40%, #2563eb 70%, #3b82f6 100%);
       background-size: 300% 300%;
@@ -62,26 +62,26 @@
       background-clip: text;
       animation: gradientShift 6s ease infinite;
     }
-
+ 
     .glass {
       background: rgba(18, 18, 24, 0.72);
       backdrop-filter: blur(20px) saturate(160%);
       border: 1px solid rgba(255,255,255,0.07);
     }
-
+ 
     .glass-nav {
       background: rgba(0,0,0,0.85);
       backdrop-filter: blur(20px);
       border-bottom: 1px solid rgba(255,255,255,0.06);
     }
-
+ 
     .grid-bg {
       background-image: radial-gradient(circle at 1px 1px, rgba(59,130,246,0.06) 1px, transparent 0);
       background-size: 40px 40px;
     }
-
+ 
     .glow-blue { box-shadow: 0 0 60px rgba(59,130,246,0.18), 0 0 120px rgba(59,130,246,0.08); }
-
+ 
     .reveal {
       opacity: 0;
       transform: translateY(28px);
@@ -91,27 +91,27 @@
     .reveal-d1 { transition-delay: 0.1s; }
     .reveal-d2 { transition-delay: 0.2s; }
     .reveal-d3 { transition-delay: 0.3s; }
-
+ 
     .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 16px; }
     .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 16px; }
     .video-border { position: relative; border-radius: 20px; padding: 2px; background: linear-gradient(135deg, #3b82f6, #8b5cf6, #3b82f6); background-size: 200% 200%; animation: gradientShift 4s ease infinite; box-shadow: 0 0 40px rgba(59,130,246,0.2); }
     .video-inner { border-radius: 18px; overflow: hidden; background: #000; }
-
+ 
     .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(59,130,246,0.2), transparent); }
-
+ 
     @keyframes floatY { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
     .float { animation: floatY 10s ease-in-out infinite; }
     .float-d { animation: floatY 10s ease-in-out 3s infinite; }
-
+ 
     ::-webkit-scrollbar { width: 10px; }
     ::-webkit-scrollbar-track { background: #000; }
     ::-webkit-scrollbar-thumb { background: linear-gradient(180deg,#3b82f6,#1e40af); border-radius: 5px; border: 2px solid #000; }
-
+ 
     .s1{animation-delay:.05s} .s2{animation-delay:.15s} .s3{animation-delay:.25s} .s4{animation-delay:.35s} .s5{animation-delay:.45s}
   </style>
 </head>
 <body class="bg-black text-zinc-100 antialiased">
-
+ 
 <!-- ── NAV ── -->
 <nav class="fixed top-0 w-full z-50 glass-nav" id="navbar">
   <div class="max-w-6xl mx-auto px-5 sm:px-8">
@@ -144,7 +144,7 @@
     </div>
   </div>
 </nav>
-
+ 
 <!-- ── HERO ── -->
 <section class="relative min-h-screen flex items-center overflow-hidden bg-black pt-16">
   <div class="absolute inset-0 pointer-events-none">
@@ -152,10 +152,10 @@
     <div class="absolute bottom-1/4 right-1/5 w-[560px] h-[560px] bg-indigo-700/10 rounded-full blur-[130px] float-d"></div>
     <div class="absolute inset-0 grid-bg opacity-40"></div>
   </div>
-
+ 
   <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28 relative z-10 w-full">
     <div class="grid lg:grid-cols-2 gap-14 items-center">
-
+ 
       <!-- Left -->
       <div>
         <div class="inline-flex items-center gap-2.5 glass px-4 py-2 rounded-full mb-8 opacity-0 animate-fade-in s1">
@@ -165,17 +165,17 @@
           </span>
           <span class="text-sm font-medium text-zinc-300">10+ Years · $10M+ Ad Spend Managed · US Founders</span>
         </div>
-
+ 
         <h1 class="font-display font-black text-5xl sm:text-6xl lg:text-7xl leading-[1.0] tracking-tight mb-6 opacity-0 animate-fade-in-up s2">
           The <span class="gradient-text">H.A.N.S.</span><br>
           Google Ads<br>
           Framework
         </h1>
-
+ 
         <p class="text-xl text-zinc-400 leading-relaxed max-w-lg mb-10 font-light opacity-0 animate-fade-in-up s3">
           A system for scaling Google Ads toward profit — built on signal quality, AI accountability, and measurable growth.
         </p>
-
+ 
         <div class="flex flex-wrap gap-4 mb-12 opacity-0 animate-fade-in-up s4">
           <a href="#contact" class="group bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 rounded-xl font-bold text-base shadow-xl shadow-blue-700/30 transition-all duration-300 hover:scale-105 flex items-center gap-2.5">
             Book a Strategy Call
@@ -185,7 +185,7 @@
             See Results
           </a>
         </div>
-
+ 
         <!-- Stats row -->
         <div class="flex flex-wrap gap-x-8 gap-y-5 opacity-0 animate-fade-in-up s5">
           <div>
@@ -204,7 +204,7 @@
           </div>
         </div>
       </div>
-
+ 
       <!-- Right — profile card -->
       <div class="hidden lg:block opacity-0 animate-fade-in-up s3">
         <div class="glass rounded-3xl p-8 glow-blue">
@@ -234,16 +234,16 @@
           </div>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- ── FRAMEWORK ── -->
 <section id="framework" class="relative py-24 lg:py-32 bg-zinc-950 overflow-hidden">
   <div class="absolute inset-0 grid-bg opacity-20"></div>
   <div class="max-w-5xl mx-auto px-5 sm:px-8 relative z-10">
-
+ 
     <div class="text-center mb-16 reveal">
       <div class="inline-flex items-center gap-2 glass px-5 py-2 rounded-full mb-5">
         <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
@@ -256,7 +256,7 @@
         Four layers. Every engagement runs the same sequence — strategy, signal, execution, scale.
       </p>
     </div>
-
+ 
     <div class="space-y-3 reveal reveal-d1">
       <div class="glass rounded-2xl p-7 flex gap-6 items-start hover:bg-zinc-900/60 transition-colors duration-300">
         <div class="w-14 h-14 bg-blue-500/12 rounded-2xl flex items-center justify-center flex-shrink-0">
@@ -295,17 +295,17 @@
         </div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- ── RESULTS ── -->
 <section id="results" class="relative py-24 lg:py-32 bg-black overflow-hidden">
   <div class="absolute inset-0 grid-bg opacity-20"></div>
   <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-blue-700/8 rounded-full blur-[140px]"></div>
-
+ 
   <div class="max-w-5xl mx-auto px-5 sm:px-8 relative z-10">
-
+ 
     <div class="text-center mb-16 reveal">
       <div class="inline-flex items-center gap-2 glass px-5 py-2 rounded-full mb-5">
         <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
@@ -316,7 +316,7 @@
       </h2>
       <p class="text-zinc-400 text-xl max-w-xl mx-auto font-light">Every number is from a live account, a specific window. No projections.</p>
     </div>
-
+ 
     <!-- Stat grid -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-14 reveal reveal-d1">
       <div class="glass rounded-2xl p-6 text-center hover:bg-zinc-900/60 transition-colors">
@@ -336,7 +336,7 @@
         <div class="text-zinc-500 text-xs leading-snug">CPA at $300K/mo<br>B2B Mfg · US</div>
       </div>
     </div>
-
+ 
     <!-- Case study video -->
     <div class="reveal reveal-d1 mb-10">
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 mb-7">
@@ -373,7 +373,7 @@
         </a>
       </div>
     </div>
-
+ 
     <!-- Intro video -->
     <div class="reveal reveal-d2">
       <div class="text-center mb-7">
@@ -391,16 +391,16 @@
         </div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- ── ABOUT ── -->
 <section id="about" class="relative py-24 lg:py-32 bg-zinc-950 overflow-hidden">
   <div class="absolute inset-0 grid-bg opacity-20"></div>
   <div class="max-w-5xl mx-auto px-5 sm:px-8 relative z-10">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
-
+ 
       <div class="reveal">
         <div class="relative group">
           <div class="absolute -inset-3 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-3xl blur-xl opacity-70 group-hover:opacity-90 transition-opacity duration-500"></div>
@@ -411,7 +411,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="reveal reveal-d1 space-y-6">
         <div>
           <div class="inline-flex items-center gap-2 glass px-5 py-2 rounded-full mb-5">
@@ -422,11 +422,11 @@
             Hans "Dexter"<br><span class="gradient-text">Lacida</span>
           </h2>
         </div>
-
+ 
         <p class="text-zinc-300 text-lg leading-relaxed">
           Veteran Google Ads specialist with 10+ years of hands-on experience and a former Google Account Strategist background. Works directly with US founders — one operator, one system.
         </p>
-
+ 
         <div class="space-y-3.5">
           <div class="flex gap-3.5 items-start">
             <i class="fa-solid fa-check text-emerald-400 mt-1 flex-shrink-0 text-sm"></i>
@@ -445,7 +445,7 @@
             <span class="text-zinc-400 text-sm leading-relaxed">4.5★ on Clutch · $50M+ tracked revenue across 10+ accounts · 2018–2026</span>
           </div>
         </div>
-
+ 
         <div class="flex gap-4 pt-2">
           <a href="https://hanslacida.com" class="bg-white text-zinc-950 font-black px-6 py-3.5 rounded-xl hover:bg-zinc-100 transition-all duration-300 shadow-xl hover:scale-105 flex items-center gap-2.5 text-sm">
             hanslacida.com <i class="fa-solid fa-arrow-right"></i>
@@ -455,17 +455,17 @@
           </a>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- ── CONTACT ── -->
 <section id="contact" class="relative py-24 lg:py-32 bg-black overflow-hidden">
   <div class="absolute inset-0 grid-bg opacity-20"></div>
   <div class="absolute top-0 left-1/3 w-[500px] h-[500px] bg-blue-700/10 rounded-full blur-[120px] float"></div>
   <div class="absolute bottom-0 right-1/3 w-[500px] h-[500px] bg-purple-700/8 rounded-full blur-[120px] float-d"></div>
-
+ 
   <div class="max-w-3xl mx-auto px-5 sm:px-8 relative z-10">
     <div class="text-center mb-12 reveal">
       <div class="inline-flex items-center gap-2 glass px-5 py-2 rounded-full mb-5">
@@ -484,18 +484,18 @@
         <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-blue-400 text-xs"></i> Reply within 48 hrs</span>
       </div>
     </div>
-
+ 
     <div class="glass rounded-2xl overflow-hidden reveal reveal-d1">
       <div class="tidycal-embed" data-path="hanslacida/15min-roas-audit-3z45lqj"></div>
       <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
     </div>
-
+ 
     <p class="text-center text-zinc-600 text-sm mt-6 reveal reveal-d2">
       Or email directly: <a href="mailto:hanzel@hanslacida.com" class="text-blue-400 hover:text-blue-300 transition-colors">hanzel@hanslacida.com</a>
     </p>
   </div>
 </section>
-
+ 
 <!-- ── FOOTER ── -->
 <footer class="bg-black border-t border-zinc-900/50 py-10">
   <div class="max-w-6xl mx-auto px-5 sm:px-8">
@@ -519,7 +519,7 @@
     </div>
   </div>
 </footer>
-
+ 
 <script>
   // Mobile nav
   const mobBtn = document.getElementById('mob-btn');
@@ -534,13 +534,13 @@
     const i = mobBtn.querySelector('i');
     i.classList.remove('fa-xmark'); i.classList.add('fa-bars');
   }));
-
+ 
   // Scroll reveal
   const ro = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
-
+ 
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e) {
@@ -549,7 +549,7 @@
       if (t) window.scrollTo({ top: t.offsetTop - 64, behavior: 'smooth' });
     });
   });
-
+ 
   // Fade in on load
   window.addEventListener('load', () => {
     document.body.style.opacity = '0';
@@ -559,3 +559,4 @@
 </script>
 </body>
 </html>
+ 

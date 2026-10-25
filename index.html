@@ -10,20 +10,20 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PPC Hans — Google Ads Specialist | Hans Lacida</title>
-  <meta name="description" content="Hans Lacida — Google Ads specialist with 10+ years experience. The H.A.N.S. Framework. Built for US founders spending $5K–$300K/month." />
+  <title>PPC Hans — Google Ads for US Ecommerce Brands | Hans Lacida</title>
+  <meta name="description" content="Hans Lacida — Google Ads specialist with 10+ years experience. The H.A.N.S. Framework. Built for US ecommerce founders spending $5K–$300K/month." />
   <meta name="author" content="Hans Lacida" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://ppchans.com/" />
   <meta property="og:title" content="PPC Hans — Google Ads Specialist" />
-  <meta property="og:description" content="Hans Lacida — Google Ads specialist with 10+ years experience. Built for US founders." />
+  <meta property="og:description" content="Hans Lacida — Google Ads specialist with 10+ years experience. Built for US ecommerce founders." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ppchans.com/" />
   <meta property="og:image" content="https://i.ibb.co/LDmq28Mv/ppchans-thumbnail-default.jpg" />
   <link rel="icon" href="https://i.ibb.co/LDmq28Mv/ppchans-thumbnail-default.jpg" type="image/jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script>
@@ -31,584 +31,925 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['Outfit', 'Inter', 'sans-serif']
-          },
-          animation: {
-            'fade-in-up': 'fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-            'fade-in': 'fadeIn 1.2s ease-out forwards',
-            'gradient-shift': 'gradientShift 6s ease infinite',
-          },
-          keyframes: {
-            fadeInUp: { '0%': { opacity: '0', transform: 'translateY(32px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
-            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
-            gradientShift: { '0%,100%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' } },
+            sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"DM Mono"', 'monospace'],
           }
         }
       }
     }
   </script>
   <style>
-    html { scroll-behavior: smooth; overflow-x: hidden; }
-    body { overflow-x: hidden; }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 40%, #2563eb 70%, #3b82f6 100%);
-      background-size: 300% 300%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: gradientShift 6s ease infinite;
+    :root {
+      --ink:     #0c0d0f;
+      --ink-2:   #1a1c20;
+      --ink-3:   #262830;
+      --rule:    rgba(255,255,255,0.07);
+      --muted:   #52556a;
+      --dim:     #8589a0;
+      --body:    #c4c7d8;
+      --white:   #eef0f8;
+      --blue:    #3d7fff;
+      --blue-d:  #2257cc;
+      --blue-l:  #7fb0ff;
+      --green:   #2ec97a;
+      --amber:   #f0a43a;
+      --purple:  #a374f9;
     }
 
-    .glass {
-      background: rgba(18, 18, 24, 0.72);
-      backdrop-filter: blur(20px) saturate(160%);
-      border: 1px solid rgba(255,255,255,0.07);
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      background: var(--ink);
+      color: var(--body);
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .glass-nav {
-      background: rgba(0,0,0,0.85);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+    body { overflow-x: hidden; margin: 0; }
+
+    /* ── GRID TEXTURE ── */
+    .grid-tex {
+      background-image:
+        linear-gradient(var(--rule) 1px, transparent 1px),
+        linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+      background-size: 60px 60px;
     }
 
-    .grid-bg {
-      background-image: radial-gradient(circle at 1px 1px, rgba(59,130,246,0.06) 1px, transparent 0);
-      background-size: 40px 40px;
+    /* ── NAV ── */
+    #navbar {
+      position: fixed; top: 0; width: 100%; z-index: 50;
+      background: rgba(12,13,15,0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--rule);
+      transition: background 0.3s;
     }
-
-    .glow-blue { box-shadow: 0 0 60px rgba(59,130,246,0.18), 0 0 120px rgba(59,130,246,0.08); }
-
-    /* Reveal: only fade-in, no slide — less "AI template" feel */
-    .reveal {
-      opacity: 0;
-      transition: opacity 0.8s ease;
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
     }
-    .reveal.in { opacity: 1; }
-    .reveal-d1 { transition-delay: 0.12s; }
-    .reveal-d2 { transition-delay: 0.22s; }
-
-    .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 16px; }
-    .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 16px; }
-    .video-border { position: relative; border-radius: 20px; padding: 2px; background: linear-gradient(135deg, #3b82f6, #8b5cf6, #3b82f6); background-size: 200% 200%; animation: gradientShift 4s ease infinite; box-shadow: 0 0 40px rgba(59,130,246,0.2); }
-    .video-inner { border-radius: 18px; overflow: hidden; background: #000; }
-
-    .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(59,130,246,0.2), transparent); }
-
-    @keyframes floatY { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
-    .float { animation: floatY 10s ease-in-out infinite; }
-    .float-d { animation: floatY 10s ease-in-out 3s infinite; }
-
-    ::-webkit-scrollbar { width: 10px; }
-    ::-webkit-scrollbar-track { background: #000; }
-    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg,#3b82f6,#1e40af); border-radius: 5px; border: 2px solid #000; }
-
-    /* Hero animation stagger */
-    .s1{animation-delay:.05s} .s2{animation-delay:.15s} .s3{animation-delay:.25s} .s4{animation-delay:.35s} .s5{animation-delay:.45s}
-
-    /* Trust pill — no all-caps */
-    .trust-pill { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.01em; }
-
-    /* Framework letter badges */
-    .letter-badge {
-      width: 52px; height: 52px; border-radius: 14px;
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+      font-weight: 700; font-size: 1rem; color: var(--white);
+      letter-spacing: -0.01em;
+    }
+    .logo-mark {
+      width: 34px; height: 34px; border-radius: 9px;
+      background: var(--blue);
       display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
+      font-weight: 800; font-size: 0.9rem; color: #fff;
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: 28px;
+      list-style: none; margin: 0; padding: 0;
+    }
+    .nav-links a {
+      font-size: 0.875rem; color: var(--dim); text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta {
+      background: var(--blue); color: #fff !important;
+      padding: 8px 18px; border-radius: 8px;
+      font-weight: 600; font-size: 0.875rem;
+      transition: background 0.15s, transform 0.15s !important;
+    }
+    .nav-cta:hover { background: var(--blue-d) !important; transform: translateY(-1px); }
+    .mob-btn {
+      display: none; background: none; border: none;
+      color: var(--dim); cursor: pointer; padding: 4px;
+    }
+    #mob-menu {
+      display: none;
+      flex-direction: column; gap: 4px;
+      padding: 12px 24px 20px;
+      border-top: 1px solid var(--rule);
+    }
+    #mob-menu a {
+      display: block; padding: 10px 0;
+      font-size: 0.9375rem; color: var(--dim);
+      text-decoration: none; border-bottom: 1px solid var(--rule);
+      transition: color 0.15s;
+    }
+    #mob-menu a:hover { color: var(--white); }
+    #mob-menu a:last-child { border-bottom: none; }
+    @media (max-width: 860px) {
+      .nav-links { display: none; }
+      .mob-btn { display: block; }
     }
 
-    /* Scarcity bar */
-    .scarcity-bar {
-      background: linear-gradient(90deg, rgba(59,130,246,0.08), rgba(139,92,246,0.08));
-      border: 1px solid rgba(59,130,246,0.18);
+    /* ── HERO ── */
+    #hero {
+      min-height: 100svh;
+      display: flex; align-items: center;
+      padding-top: 60px;
+      position: relative; overflow: hidden;
     }
+    .hero-glow-1 {
+      position: absolute; top: 15%; left: -10%;
+      width: 520px; height: 520px;
+      background: radial-gradient(circle, rgba(61,127,255,0.13) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-glow-2 {
+      position: absolute; bottom: 10%; right: -8%;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(163,116,249,0.09) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1120px; margin: 0 auto; padding: 80px 24px;
+      display: grid; grid-template-columns: 1fr 420px; gap: 72px;
+      align-items: center; width: 100%;
+      position: relative; z-index: 1;
+    }
+    @media (max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 48px; padding: 60px 24px; }
+      .hero-card { display: none; }
+    }
+
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; border-radius: 100px;
+      border: 1px solid rgba(46,201,122,0.25);
+      background: rgba(46,201,122,0.06);
+      font-size: 0.78rem; color: var(--green);
+      font-weight: 500; margin-bottom: 28px;
+    }
+    .status-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 3px rgba(46,201,122,0.2);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin: 0 0 20px;
+    }
+    .h1-accent { color: var(--blue); }
+
+    .hero-sub {
+      font-size: 1.125rem; color: var(--dim);
+      max-width: 520px; line-height: 1.7;
+      margin: 0 0 36px;
+    }
+
+    .btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 52px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--blue); color: #fff;
+      padding: 13px 24px; border-radius: 10px;
+      font-weight: 700; font-size: 0.9375rem;
+      text-decoration: none;
+      transition: background 0.15s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--blue-d); transform: translateY(-2px); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1px solid var(--rule);
+      color: var(--body);
+      padding: 13px 24px; border-radius: 10px;
+      font-weight: 600; font-size: 0.9375rem;
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.2); color: var(--white); }
+
+    .hero-stats {
+      display: flex; flex-wrap: wrap; gap: 32px;
+      padding-top: 28px;
+      border-top: 1px solid var(--rule);
+    }
+    .stat-item {}
+    .stat-num {
+      font-size: 1.75rem; font-weight: 800;
+      color: var(--white); letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.75rem; color: var(--muted);
+      margin-top: 4px; line-height: 1.4;
+    }
+    .stat-div { width: 1px; background: var(--rule); align-self: stretch; }
+
+    /* Hero card */
+    .hero-card {
+      background: var(--ink-2);
+      border: 1px solid var(--rule);
+      border-radius: 20px;
+      padding: 10px;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.4);
+    }
+    .hero-card img {
+      width: 100%; border-radius: 14px;
+      display: block;
+    }
+    .hero-card-info {
+      padding: 20px 16px 14px;
+      text-align: center;
+    }
+    .hero-card-name {
+      font-size: 1.0625rem; font-weight: 700;
+      color: var(--white); margin-bottom: 4px;
+    }
+    .hero-card-role {
+      font-size: 0.8125rem; color: var(--muted); margin-bottom: 16px;
+    }
+    .card-rule { height: 1px; background: var(--rule); margin-bottom: 16px; }
+    .hero-card-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      text-align: center; gap: 4px;
+    }
+    .card-stat-num {
+      font-size: 1rem; font-weight: 700;
+      color: var(--blue-l); line-height: 1;
+    }
+    .card-stat-label {
+      font-size: 0.68rem; color: var(--muted); margin-top: 3px;
+    }
+
+    /* ── SECTION BASE ── */
+    section { position: relative; }
+    .section-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: 96px 24px;
+      position: relative; z-index: 1;
+    }
+    .section-inner-narrow {
+      max-width: 760px; margin: 0 auto;
+      padding: 96px 24px;
+      position: relative; z-index: 1;
+    }
+
+    /* ── SECTION HEADINGS ── */
+    h2 {
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 800; letter-spacing: -0.03em;
+      color: var(--white); line-height: 1.1;
+      margin: 0 0 16px;
+    }
+    .section-sub {
+      font-size: 1.0625rem; color: var(--dim);
+      max-width: 520px; line-height: 1.7; margin: 0;
+    }
+    .section-head { margin-bottom: 56px; }
+    .section-head.center { text-align: center; }
+    .section-head.center .section-sub { margin: 0 auto; }
+
+    /* ── FRAMEWORK ── */
+    #framework { background: var(--ink-2); }
+    .framework-list { display: flex; flex-direction: column; gap: 2px; }
+    .fw-item {
+      display: flex; gap: 24px; align-items: flex-start;
+      padding: 28px 32px;
+      background: var(--ink-3);
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      transition: border-color 0.2s;
+    }
+    .fw-item:hover { border-color: rgba(61,127,255,0.2); }
+    .fw-letter {
+      font-family: "DM Mono", monospace;
+      font-size: 1.5rem; font-weight: 500;
+      line-height: 1; flex-shrink: 0;
+      width: 36px; padding-top: 3px;
+    }
+    .fw-letter.blue   { color: var(--blue-l); }
+    .fw-letter.green  { color: var(--green); }
+    .fw-letter.amber  { color: var(--amber); }
+    .fw-letter.purple { color: var(--purple); }
+    .fw-title {
+      font-size: 1rem; font-weight: 700;
+      color: var(--white); margin-bottom: 6px;
+    }
+    .fw-body {
+      font-size: 0.9375rem; color: var(--dim);
+      line-height: 1.7; margin: 0;
+    }
+    @media (max-width: 600px) {
+      .fw-item { padding: 20px; }
+    }
+
+    /* ── RESULTS ── */
+    #results { background: var(--ink); }
+    .results-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 2px; margin-bottom: 40px;
+    }
+    @media (max-width: 700px) {
+      .results-grid { grid-template-columns: 1fr; }
+    }
+    .res-card {
+      background: var(--ink-2); border: 1px solid var(--rule);
+      border-radius: 14px; padding: 28px 24px;
+      text-align: center;
+    }
+    .res-num {
+      font-size: 2.4rem; font-weight: 800;
+      letter-spacing: -0.04em; line-height: 1;
+      margin-bottom: 8px;
+    }
+    .res-label {
+      font-size: 0.78rem; color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* HVAC card */
+    .case-card {
+      background: var(--ink-2); border: 1px solid var(--rule);
+      border-radius: 16px; overflow: hidden; margin-bottom: 32px;
+    }
+    .case-head {
+      padding: 28px 32px;
+      display: flex; flex-wrap: wrap; gap: 24px;
+      align-items: center; justify-content: space-between;
+    }
+    .case-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-family: "DM Mono", monospace;
+      font-size: 0.72rem; color: var(--green); margin-bottom: 10px;
+    }
+    .case-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+    .case-title {
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--white); margin: 0 0 4px;
+    }
+    .case-meta { font-size: 0.8125rem; color: var(--muted); }
+    .case-metrics {
+      display: flex; gap: 24px; flex-shrink: 0;
+    }
+    .cm-item { text-align: center; }
+    .cm-num {
+      font-size: 1.5rem; font-weight: 800;
+      letter-spacing: -0.03em; line-height: 1;
+    }
+    .cm-label { font-size: 0.7rem; color: var(--muted); margin-top: 3px; }
+    .cm-div { width: 1px; background: var(--rule); }
+    .case-footer {
+      border-top: 1px solid var(--rule);
+      padding: 12px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .case-footer-note { font-size: 0.78rem; color: var(--muted); }
+    .case-toggle-btn {
+      background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; gap: 6px;
+      font-size: 0.8125rem; font-weight: 600;
+      color: var(--blue); transition: color 0.15s;
+    }
+    .case-toggle-btn:hover { color: var(--blue-l); }
+    .pdf-panel { display: none; border-top: 1px solid var(--rule); }
+    .pdf-panel iframe {
+      width: 100%; height: 480px; border: 0;
+      background: var(--ink);
+      display: block;
+    }
+    @media (max-width: 700px) {
+      .case-head { flex-direction: column; }
+      .case-metrics { justify-content: flex-start; }
+      .case-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
+    }
+
+    /* Video */
+    .video-section { margin-bottom: 32px; }
+    .video-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: "DM Mono", monospace;
+      font-size: 0.72rem; color: #f87171; margin-bottom: 14px;
+    }
+    .video-label-dot {
+      width: 7px; height: 7px; border-radius: 50%; background: #f87171;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .video-title {
+      font-size: 1.375rem; font-weight: 700;
+      color: var(--white); margin: 0 0 4px;
+    }
+    .video-meta { font-size: 0.8125rem; color: var(--muted); margin-bottom: 20px; }
+    .video-wrap {
+      position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+      border-radius: 14px;
+      border: 1px solid var(--rule);
+    }
+    .video-wrap iframe {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%; border: 0;
+    }
+    .video-nda {
+      margin-top: 14px; padding: 14px 18px;
+      background: var(--ink-2); border: 1px solid var(--rule);
+      border-radius: 10px;
+      display: flex; flex-wrap: wrap; gap: 12px;
+      align-items: center; justify-content: space-between;
+    }
+    .video-nda-text {
+      font-size: 0.8125rem; color: var(--muted);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .video-nda-text i { color: var(--green); }
+    .video-nda a {
+      font-size: 0.8125rem; font-weight: 600; color: var(--blue);
+      text-decoration: none; white-space: nowrap;
+      transition: color 0.15s;
+    }
+    .video-nda a:hover { color: var(--blue-l); }
+
+    /* ── ABOUT ── */
+    #about { background: var(--ink-2); }
+    .about-grid {
+      display: grid; grid-template-columns: 400px 1fr;
+      gap: 72px; align-items: center;
+    }
+    @media (max-width: 860px) {
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-img-wrap { max-width: 380px; }
+    }
+    .about-img-wrap {
+      border-radius: 18px; overflow: hidden;
+      border: 1px solid var(--rule);
+    }
+    .about-img-wrap img { width: 100%; display: block; }
+    .about-checks { list-style: none; margin: 0 0 28px; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+    .about-checks li {
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: 0.9375rem; color: var(--dim);
+    }
+    .about-checks li i { color: var(--green); margin-top: 3px; font-size: 0.8rem; flex-shrink: 0; }
+    .about-btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    /* ── FAQ ── */
+    #faq { background: var(--ink); }
+    .faq-list {
+      border: 1px solid var(--rule);
+      border-radius: 14px; overflow: hidden;
+    }
+    .faq-item { border-bottom: 1px solid var(--rule); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-trigger {
+      width: 100%; display: flex; align-items: center;
+      justify-content: space-between; gap: 16px;
+      padding: 20px 28px; cursor: pointer;
+      background: none; border: none; text-align: left;
+      transition: background 0.15s;
+    }
+    .faq-trigger:hover { background: rgba(255,255,255,0.02); }
+    .faq-q {
+      font-size: 0.9375rem; font-weight: 600;
+      color: var(--white); line-height: 1.45;
+    }
+    .faq-chevron {
+      width: 22px; height: 22px; border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted); flex-shrink: 0;
+      transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.3s;
+    }
+    .faq-item.faq-open .faq-chevron {
+      background: rgba(61,127,255,0.1); border-color: rgba(61,127,255,0.35);
+      color: var(--blue-l); transform: rotate(180deg);
+    }
+    .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(.22,1,.36,1), opacity 0.28s ease; opacity: 0; }
+    .faq-item.faq-open .faq-body { opacity: 1; }
+    .faq-a {
+      font-size: 0.875rem; color: var(--dim);
+      line-height: 1.8; padding: 0 28px 22px; display: block;
+    }
+    .faq-a strong { color: var(--white); font-weight: 600; }
+    .faq-a a { color: var(--blue); transition: color 0.15s; text-decoration: none; }
+    .faq-a a:hover { color: var(--blue-l); }
+    @media (max-width: 600px) {
+      .faq-trigger { padding: 16px 18px; }
+      .faq-q { font-size: 0.875rem; }
+      .faq-a { font-size: 0.8125rem; padding: 0 18px 18px; }
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--ink-2); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: start;
+    }
+    @media (max-width: 860px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+    .availability-bar {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 14px; border-radius: 8px;
+      background: rgba(61,127,255,0.08);
+      border: 1px solid rgba(61,127,255,0.18);
+      font-size: 0.8125rem; color: var(--blue-l);
+      font-weight: 500; margin-bottom: 24px;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
+    .contact-info a {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.9375rem; color: var(--dim);
+      text-decoration: none; transition: color 0.15s;
+    }
+    .contact-info a:hover { color: var(--white); }
+    .contact-info i { color: var(--blue); width: 16px; }
+    .contact-note {
+      margin-top: 24px; font-size: 0.8125rem; color: var(--muted);
+      line-height: 1.6;
+    }
+    .booking-wrap {
+      background: var(--ink); border: 1px solid var(--rule);
+      border-radius: 16px; overflow: hidden;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid var(--rule);
+      padding: 64px 0 32px;
+    }
+    .footer-inner { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 40px; margin-bottom: 56px;
+    }
+    @media (max-width: 860px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 540px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    .footer-brand p {
+      font-size: 0.875rem; color: var(--muted);
+      margin: 14px 0 20px; max-width: 260px; line-height: 1.65;
+    }
+    .footer-social { display: flex; gap: 8px; }
+    .footer-social a {
+      width: 32px; height: 32px; border-radius: 8px;
+      border: 1px solid var(--rule);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted); text-decoration: none;
+      font-size: 0.875rem; transition: color 0.15s, border-color 0.15s;
+    }
+    .footer-social a:hover { color: var(--white); border-color: rgba(255,255,255,0.15); }
+    .footer-col h4 {
+      font-size: 0.72rem; font-weight: 600;
+      color: var(--muted); letter-spacing: 0.08em;
+      text-transform: uppercase; margin: 0 0 16px;
+    }
+    .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a, .footer-col ul li span {
+      font-size: 0.875rem; color: var(--dim);
+      text-decoration: none; transition: color 0.15s;
+      display: flex; align-items: center; gap: 7px;
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-col ul li i { font-size: 0.75rem; color: var(--muted); width: 14px; }
+    .footer-rule { height: 1px; background: var(--rule); margin-bottom: 24px; }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-copy { font-size: 0.78rem; color: var(--muted); }
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a {
+      font-size: 0.78rem; color: var(--muted);
+      text-decoration: none; transition: color 0.15s;
+    }
+    .footer-links a:hover { color: var(--dim); }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transition: opacity 0.7s ease; }
+    .reveal.in { opacity: 1; }
+
+    /* ── HERO ENTRANCE ── */
+    .h-enter { opacity: 0; transform: translateY(20px); animation: hIn 0.8s cubic-bezier(0.16,1,0.3,1) forwards; }
+    @keyframes hIn { to { opacity: 1; transform: translateY(0); } }
+    .d1{animation-delay:0.05s} .d2{animation-delay:0.15s} .d3{animation-delay:0.25s}
+    .d4{animation-delay:0.35s} .d5{animation-delay:0.45s}
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--ink); }
+    ::-webkit-scrollbar-thumb { background: var(--ink-3); border-radius: 4px; }
 
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
     }
-
-    /* ── FAQ ── */
-    .faq-list { border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; overflow: hidden; }
-    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.06); }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-trigger {
-      width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px;
-      padding: 20px 24px; cursor: pointer; background: none; border: none; text-align: left;
-      transition: background 0.15s;
-    }
-    .faq-trigger:hover { background: rgba(255,255,255,0.03); }
-    .faq-item.faq-open .faq-trigger { background: rgba(255,255,255,0.04); }
-    .faq-q { font-size: 0.9375rem; font-weight: 500; color: #eeeef5; line-height: 1.45; }
-    .faq-chevron {
-      width: 24px; height: 24px; border-radius: 6px;
-      border: 1px solid rgba(255,255,255,0.1);
-      display: flex; align-items: center; justify-content: center;
-      color: rgba(255,255,255,0.3); flex-shrink: 0;
-      transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.35s cubic-bezier(.22,1,.36,1);
-    }
-    .faq-item.faq-open .faq-chevron {
-      background: rgba(59,130,246,0.12); border-color: rgba(59,130,246,0.4);
-      color: #60a5fa; transform: rotate(180deg);
-    }
-    .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.42s cubic-bezier(.22,1,.36,1), opacity 0.3s ease; opacity: 0; }
-    .faq-item.faq-open .faq-body { opacity: 1; }
-    .faq-a { font-size: 0.875rem; color: #8888aa; line-height: 1.75; padding: 0 24px 20px; display: block; }
-    .faq-a strong { color: #eeeef5; font-weight: 500; }
-    .faq-a a { color: #60a5fa; transition: opacity 0.15s; }
-    .faq-a a:hover { opacity: 0.8; text-decoration: underline; }
-
-    @media (max-width: 640px) {
-      .faq-trigger { padding: 16px 18px; }
-      .faq-q { font-size: 0.875rem; }
-      .faq-a { font-size: 0.8125rem; padding: 0 18px 16px; }
-    }
   </style>
 </head>
-<body class="bg-black text-zinc-100 antialiased">
+<body>
 
 <!-- ── NAV ── -->
-<nav class="fixed top-0 w-full z-50 glass-nav" id="navbar">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8">
-    <div class="flex justify-between items-center h-16">
-      <a href="/" class="flex items-center gap-3 group">
-        <div class="w-9 h-9 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-700/30 group-hover:scale-105 transition-transform">
-          <span class="text-white font-display font-black text-base">H</span>
-        </div>
-        <span class="font-display font-bold text-lg text-white tracking-tight">PPC Hans</span>
-      </a>
-      <div class="hidden lg:flex items-center gap-7">
-        <a href="#framework" class="text-sm text-zinc-400 hover:text-white transition-colors">Framework</a>
-        <a href="#results" class="text-sm text-zinc-400 hover:text-white transition-colors">Results</a>
-        <a href="#about" class="text-sm text-zinc-400 hover:text-white transition-colors">About</a>
-        <a href="#faq" class="text-sm text-zinc-400 hover:text-white transition-colors">FAQ</a>
-        <!-- CTA copy: active verb, clear outcome -->
-        <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-lg font-semibold text-sm transition-all duration-200 hover:scale-105 shadow-md shadow-blue-700/30">
-          Claim Your Strategy Call
-        </a>
-      </div>
-      <button id="mob-btn" class="lg:hidden text-zinc-400 hover:text-white transition-colors p-1" aria-label="Toggle menu">
-        <i class="fa-solid fa-bars text-xl"></i>
-      </button>
-    </div>
-    <div id="mob-menu" class="hidden lg:hidden pb-5 pt-3 border-t border-zinc-800/50">
-      <div class="flex flex-col gap-3">
-        <a href="#framework" class="text-zinc-400 hover:text-white py-2 text-sm transition-colors">Framework</a>
-        <a href="#results" class="text-zinc-400 hover:text-white py-2 text-sm transition-colors">Results</a>
-        <a href="#about" class="text-zinc-400 hover:text-white py-2 text-sm transition-colors">About</a>
-        <a href="#faq" class="text-zinc-400 hover:text-white py-2 text-sm transition-colors">FAQ</a>
-        <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm text-center mt-1">Claim Your Strategy Call</a>
-      </div>
-    </div>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="logo-mark">H</div>
+      PPC Hans
+    </a>
+    <ul class="nav-links">
+      <li><a href="#framework">Framework</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Book a call</a></li>
+    </ul>
+    <button class="mob-btn" id="mob-btn" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars fa-lg"></i>
+    </button>
+  </div>
+  <div id="mob-menu">
+    <a href="#framework">Framework</a>
+    <a href="#results">Results</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" style="color: var(--blue); font-weight: 600;">Book a call →</a>
   </div>
 </nav>
 
 <!-- ── HERO ── -->
-<section class="relative min-h-screen flex items-center overflow-hidden bg-black pt-16">
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="absolute top-1/4 left-1/5 w-[480px] h-[480px] bg-blue-700/12 rounded-full blur-[110px] float"></div>
-    <div class="absolute bottom-1/4 right-1/5 w-[560px] h-[560px] bg-indigo-700/10 rounded-full blur-[130px] float-d"></div>
-    <div class="absolute inset-0 grid-bg opacity-40"></div>
-  </div>
+<section id="hero" class="grid-tex">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
 
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28 relative z-10 w-full">
-    <div class="grid lg:grid-cols-2 gap-14 items-center">
+  <div class="hero-inner">
+    <div>
+      <div class="status-pill h-enter d1">
+        <span class="status-dot"></span>
+        2 client spots open — US ecommerce
+      </div>
 
-      <!-- Left -->
-      <div>
-        <!-- Badge: proof-first, not resume-first -->
-        <div class="inline-flex items-center gap-2.5 glass px-4 py-2 rounded-full mb-8 opacity-0 animate-fade-in s1">
-          <span class="relative flex h-2.5 w-2.5">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-          </span>
-          <!-- Removed middle-dot list; lead with outcome not résumé -->
-          <span class="trust-pill text-zinc-300">$10M+ managed · 4.5★ Clutch · US market</span>
+      <h1 class="h-enter d2">
+        Google Ads<br>
+        that move<br>
+        <span class="h1-accent">the number.</span>
+      </h1>
+
+      <p class="hero-sub h-enter d3">
+        Hans Lacida runs the H.A.N.S. Framework — a structured Google Ads system for US ecommerce founders who want revenue, not just traffic.
+      </p>
+
+      <div class="btn-row h-enter d4">
+        <a href="#contact" class="btn-primary">
+          Book a free 15-min audit <i class="fa-solid fa-arrow-right fa-sm"></i>
+        </a>
+        <a href="#results" class="btn-ghost">
+          See verified results
+        </a>
+      </div>
+
+      <div class="hero-stats h-enter d5">
+        <div class="stat-item">
+          <div class="stat-num">20×</div>
+          <div class="stat-label">Peak ROAS<br>eCommerce · US</div>
         </div>
-
-        <!-- Headline: what you get, not what it's called -->
-        <h1 class="font-display font-black text-5xl sm:text-6xl lg:text-7xl leading-[1.0] tracking-tight mb-6 opacity-0 animate-fade-in-up s2">
-          Google Ads<br>
-          that scale<br>
-          <span class="gradient-text">to profit.</span>
-        </h1>
-
-        <!-- Subhead: plain language, no jargon, no hedging -->
-        <p class="text-xl text-zinc-400 leading-relaxed max-w-lg mb-10 font-light opacity-0 animate-fade-in-up s3">
-          Hans Lacida runs the H.A.N.S. Framework — a structured system for US founders who want Google Ads that grow revenue, not just spend.
-        </p>
-
-        <div class="flex flex-wrap gap-4 mb-12 opacity-0 animate-fade-in-up s4">
-          <a href="#contact" class="group bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 rounded-xl font-bold text-base shadow-xl shadow-blue-700/30 transition-all duration-300 hover:scale-105 flex items-center gap-2.5">
-            Claim Your Free Strategy Call
-            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-          </a>
-          <a href="#results" class="glass hover:bg-zinc-800/80 text-white px-7 py-3.5 rounded-xl font-bold text-base transition-all duration-300 flex items-center gap-2.5">
-            See the numbers
-          </a>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Years hands-on<br>Google Ads</div>
         </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <div class="stat-num">$1M+</div>
+          <div class="stat-label">Revenue tracked<br>single client · 7 months</div>
+        </div>
+      </div>
+    </div>
 
-        <!-- Stats: add context so they land, not float -->
-        <div class="flex flex-wrap gap-x-8 gap-y-5 opacity-0 animate-fade-in-up s5">
+    <!-- Profile card -->
+    <div class="hero-card h-enter d3">
+      <img src="https://i.ibb.co/1fWcjGrw/ppchans-media-profile.png"
+           alt="Hans Lacida — Google Ads Specialist" />
+      <div class="hero-card-info">
+        <div class="hero-card-name">Hans "Dexter" Lacida</div>
+        <div class="hero-card-role">Google Ads Specialist · 10+ Years</div>
+        <div class="card-rule"></div>
+        <div class="hero-card-grid">
           <div>
-            <div class="font-display font-black text-3xl text-white">$10M+</div>
-            <div class="text-xs text-zinc-500 mt-0.5">Ad spend managed — peak $300K/mo</div>
+            <div class="card-stat-num">Direct</div>
+            <div class="card-stat-label">You work with Hans</div>
           </div>
-          <div class="w-px bg-zinc-800 self-stretch hidden sm:block"></div>
           <div>
-            <div class="font-display font-black text-3xl text-white">70×</div>
-            <div class="text-xs text-zinc-500 mt-0.5">Peak ROAS · eBike · AU/NZ · 90-day window</div>
+            <div class="card-stat-num">US</div>
+            <div class="card-stat-label">Market focus</div>
           </div>
-          <div class="w-px bg-zinc-800 self-stretch hidden sm:block"></div>
           <div>
-            <div class="font-display font-black text-3xl text-white">4.5★</div>
-            <div class="text-xs text-zinc-500 mt-0.5">Clutch — independently verified</div>
+            <div class="card-stat-num">2 left</div>
+            <div class="card-stat-label">Spots this month</div>
           </div>
         </div>
       </div>
-
-      <!-- Right — profile card -->
-      <div class="hidden lg:block opacity-0 animate-fade-in-up s3">
-        <div class="glass rounded-3xl p-8 glow-blue">
-          <div class="glass rounded-2xl overflow-hidden mb-6">
-            <img src="https://i.ibb.co/1fWcjGrw/ppchans-media-profile.png"
-                 alt="Hans Lacida — Google Ads Specialist"
-                 class="w-full object-cover">
-          </div>
-          <div class="text-center">
-            <div class="font-display font-black text-2xl text-white mb-1">Hans "Dexter" Lacida</div>
-            <div class="text-zinc-400 text-sm mb-5">Google Ads Specialist · Former Google Account Strategist</div>
-            <div class="divider mb-5"></div>
-            <div class="grid grid-cols-3 gap-4">
-              <div class="text-center">
-                <div class="font-display font-bold text-xl text-blue-400">10+</div>
-                <div class="text-zinc-500 text-xs mt-0.5">Years hands-on</div>
-              </div>
-              <div class="text-center">
-                <div class="font-display font-bold text-xl text-emerald-400">Direct</div>
-                <div class="text-zinc-500 text-xs mt-0.5">You work with Hans</div>
-              </div>
-              <div class="text-center">
-                <div class="font-display font-bold text-xl text-purple-400">US</div>
-                <div class="text-zinc-500 text-xs mt-0.5">Market focus</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
 <!-- ── FRAMEWORK ── -->
-<section id="framework" class="relative py-24 lg:py-32 bg-zinc-950 overflow-hidden">
-  <div class="absolute inset-0 grid-bg opacity-20"></div>
-  <div class="max-w-5xl mx-auto px-5 sm:px-8 relative z-10">
-
-    <div class="text-center mb-16 reveal">
-      <!-- Removed all-caps eyebrow label per design skill guidance -->
-      <h2 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl mb-5 leading-tight">
-        The <span class="gradient-text">H.A.N.S.</span> Framework
-      </h2>
-      <p class="text-zinc-400 text-xl max-w-xl mx-auto font-light leading-relaxed">
-        Four layers every engagement runs through — in order, every time. Strategy before spend, signal before scale.
-      </p>
+<section id="framework">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <h2>The <span style="color: var(--blue);">H.A.N.S.</span> Framework</h2>
+      <p class="section-sub">Four layers every engagement runs through — in order, every time. Strategy before spend, signal before scale.</p>
     </div>
 
-    <!-- Framework cards: no numbered markers (not a pure sequence), letters serve as identity -->
-    <div class="space-y-3 reveal reveal-d1">
-      <div class="glass rounded-2xl p-7 flex gap-6 items-start hover:bg-zinc-900/60 transition-colors duration-300">
-        <div class="letter-badge bg-blue-500/12">
-          <span class="font-display font-black text-3xl text-blue-400">H</span>
-        </div>
+    <div class="framework-list reveal">
+      <div class="fw-item">
+        <div class="fw-letter blue">H</div>
         <div>
-          <div class="font-bold text-white text-lg mb-1.5">High-leverage strategy</div>
-          <!-- Removed "so the budget goes to work immediately" — implied, not needed -->
-          <p class="text-zinc-400 leading-relaxed">Offer, market, ICP, budget, and channel decisions locked before a single dollar is committed. Every campaign launches with a written brief — no guessing mid-flight.</p>
+          <div class="fw-title">High-leverage strategy</div>
+          <p class="fw-body">Offer, market, ICP, budget, and channel decisions locked before a single dollar is committed. Every campaign launches with a written brief — no guessing mid-flight.</p>
         </div>
       </div>
-      <div class="glass rounded-2xl p-7 flex gap-6 items-start hover:bg-zinc-900/60 transition-colors duration-300">
-        <div class="letter-badge bg-emerald-500/12">
-          <span class="font-display font-black text-3xl text-emerald-400">A</span>
-        </div>
+      <div class="fw-item">
+        <div class="fw-letter green">A</div>
         <div>
-          <div class="font-bold text-white text-lg mb-1.5">Accurate signal</div>
-          <!-- Removed "so Google's AI bids on truth, not noise" — kept the clear explanation instead -->
-          <p class="text-zinc-400 leading-relaxed">Server-side tracking, CRM data, first-party audiences, and conversion-quality filters — so the bidding algorithm works from clean data, not inflated numbers.</p>
+          <div class="fw-title">Accurate signal</div>
+          <p class="fw-body">Server-side tracking, CRM data, first-party audiences, and conversion-quality filters — so the bidding algorithm works from clean data, not inflated numbers.</p>
         </div>
       </div>
-      <div class="glass rounded-2xl p-7 flex gap-6 items-start hover:bg-zinc-900/60 transition-colors duration-300">
-        <div class="letter-badge bg-amber-500/12">
-          <span class="font-display font-black text-3xl text-amber-400">N</span>
-        </div>
+      <div class="fw-item">
+        <div class="fw-letter amber">N</div>
         <div>
-          <div class="font-bold text-white text-lg mb-1.5">AI-native execution</div>
-          <p class="text-zinc-400 leading-relaxed">AI handles research, creative variants, audits, and anomaly detection. Every output goes through human review before it ships. Speed without blind trust.</p>
+          <div class="fw-title">AI-native execution</div>
+          <p class="fw-body">AI handles research, creative variants, audits, and anomaly detection. Every output goes through human review before it ships. Speed without blind trust.</p>
         </div>
       </div>
-      <div class="glass rounded-2xl p-7 flex gap-6 items-start hover:bg-zinc-900/60 transition-colors duration-300">
-        <div class="letter-badge bg-purple-500/12">
-          <span class="font-display font-black text-3xl text-purple-400">S</span>
-        </div>
+      <div class="fw-item">
+        <div class="fw-letter purple">S</div>
         <div>
-          <div class="font-bold text-white text-lg mb-1.5">Scale with guardrails</div>
-          <!-- Removed "Growth that doesn't break the business" — cliché; specific detail does more work -->
-          <p class="text-zinc-400 leading-relaxed">Lead-quality thresholds, margin constraints, brand safety rules, and automation overrides set before spend increases. Scaling should never surprise you.</p>
+          <div class="fw-title">Scale with guardrails</div>
+          <p class="fw-body">Lead-quality thresholds, margin constraints, brand safety rules, and automation overrides set before spend increases. Scaling should never surprise you.</p>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- ── RESULTS ── -->
-<section id="results" class="relative py-24 lg:py-32 bg-black overflow-hidden">
-  <div class="absolute inset-0 grid-bg opacity-20"></div>
-  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-blue-700/8 rounded-full blur-[140px]"></div>
-
-  <div class="max-w-5xl mx-auto px-5 sm:px-8 relative z-10">
-
-    <div class="text-center mb-16 reveal">
-      <h2 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl mb-5 leading-tight">
-        Real accounts. <span class="gradient-text">Verified results.</span>
-      </h2>
-      <!-- Reframed: truth-first without sounding defensive -->
-      <p class="text-zinc-400 text-xl max-w-xl mx-auto font-light">
-        Every figure below comes from a specific account and a defined time window — pulled from the platform, not modeled.
-      </p>
+<section id="results" style="background: var(--ink);">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <h2>Real accounts. <span style="color: var(--blue);">Verified results.</span></h2>
+      <p class="section-sub">Every figure comes from a specific account and a defined time window — pulled from the platform, not modeled.</p>
     </div>
 
-    <!-- Stat grid: added "why it matters" context per number -->
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-14 reveal reveal-d1">
-      <div class="glass rounded-2xl p-6 text-center hover:bg-zinc-900/60 transition-colors">
-        <div class="font-display font-black text-4xl text-blue-400 mb-1.5">70×</div>
-        <div class="text-zinc-500 text-xs leading-snug">Peak ROAS<br>eBike · AU/NZ · 90-day window</div>
+    <div class="results-grid reveal">
+      <div class="res-card">
+        <div class="res-num" style="color: var(--amber);">20×</div>
+        <div class="res-label">Peak ROAS<br>eCommerce · US</div>
       </div>
-      <div class="glass rounded-2xl p-6 text-center hover:bg-zinc-900/60 transition-colors">
-        <div class="font-display font-black text-4xl text-emerald-400 mb-1.5">−53%</div>
-        <div class="text-zinc-500 text-xs leading-snug">Cost per acquisition<br>Healthcare · CA</div>
+      <div class="res-card">
+        <div class="res-num" style="color: var(--green);">−53%</div>
+        <div class="res-label">Cost per acquisition<br>Healthcare · CA</div>
       </div>
-      <div class="glass rounded-2xl p-6 text-center hover:bg-zinc-900/60 transition-colors">
-        <div class="font-display font-black text-4xl text-amber-400 mb-1.5">21×</div>
-        <div class="text-zinc-500 text-xs leading-snug">Peak ROAS<br>Security eComm · US</div>
-      </div>
-      <div class="glass rounded-2xl p-6 text-center hover:bg-zinc-900/60 transition-colors">
-        <div class="font-display font-black text-4xl text-purple-400 mb-1.5">−39%</div>
-        <div class="text-zinc-500 text-xs leading-snug">CPA at $300K/mo<br>B2B Manufacturing · US</div>
+      <div class="res-card">
+        <div class="res-num" style="color: var(--purple);">−39%</div>
+        <div class="res-label">CPA reduction<br>B2B Manufacturing · US</div>
       </div>
     </div>
 
-    <!-- ── HVAC CASE STUDY REPORT CARD ── -->
-    <div class="reveal reveal-d1 mb-10">
-      <div class="glass rounded-2xl overflow-hidden">
-
-        <!-- Header row — numbers visible without opening -->
-        <div class="p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
-          <div>
-            <div class="flex items-center gap-2.5 mb-3">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
-              <span class="text-xs font-semibold text-emerald-400 tracking-wide">Live dashboard · HVAC · Tennessee · US</span>
-            </div>
-            <h3 class="font-display font-black text-xl sm:text-2xl text-white leading-tight mb-1">$1M+ revenue — HVAC brand · 7 months</h3>
-            <p class="text-zinc-500 text-sm">Apr – Oct 2026 · 2nd brand · Prepared by Hanzel Lacida (Kaizenstrategy Solutions LLC)</p>
+    <!-- HVAC Case Study Card -->
+    <div class="case-card reveal">
+      <div class="case-head">
+        <div>
+          <div class="case-badge">
+            <span class="case-badge-dot"></span>
+            Live dashboard · HVAC · Tennessee · US
           </div>
-          <!-- Three headline metrics surfaced upfront -->
-          <div class="flex gap-5 sm:gap-6 flex-shrink-0">
-            <div class="text-center">
-              <div class="font-display font-black text-2xl text-emerald-400">$1.01M</div>
-              <div class="text-zinc-600 text-xs mt-0.5">Revenue</div>
-            </div>
-            <div class="w-px bg-zinc-800 self-stretch"></div>
-            <div class="text-center">
-              <div class="font-display font-black text-2xl text-blue-400">198k</div>
-              <div class="text-zinc-600 text-xs mt-0.5">Sessions</div>
-            </div>
-            <div class="w-px bg-zinc-800 self-stretch"></div>
-            <div class="text-center">
-              <div class="font-display font-black text-2xl text-purple-400">431</div>
-              <div class="text-zinc-600 text-xs mt-0.5">Purchases</div>
-            </div>
+          <div class="case-title">$1M+ revenue — HVAC brand · 7 months</div>
+          <div class="case-meta">Apr – Oct 2026 · 2nd brand · Prepared by Hanzel Lacida (KaizenStrategy Solutions LLC)</div>
+        </div>
+        <div class="case-metrics">
+          <div class="cm-item">
+            <div class="cm-num" style="color: var(--green);">$1.01M</div>
+            <div class="cm-label">Revenue</div>
+          </div>
+          <div class="cm-div"></div>
+          <div class="cm-item">
+            <div class="cm-num" style="color: var(--blue-l);">198k</div>
+            <div class="cm-label">Sessions</div>
+          </div>
+          <div class="cm-div"></div>
+          <div class="cm-item">
+            <div class="cm-num" style="color: var(--purple);">431</div>
+            <div class="cm-label">Purchases</div>
           </div>
         </div>
-
-        <!-- Toggle button -->
-        <div class="border-t border-zinc-800/60 px-6 sm:px-7 py-3 flex items-center justify-between">
-          <span class="text-xs text-zinc-500">Google Analytics dashboard — client data redacted under NDA</span>
-          <button id="pdf-toggle" class="flex items-center gap-2 text-blue-400 text-sm font-semibold hover:text-blue-300 transition-colors">
-            <span id="pdf-toggle-label">View report</span>
-            <i id="pdf-toggle-icon" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-          </button>
-        </div>
-
-        <!-- PDF embed — hidden by default, expands on click -->
-        <div id="pdf-panel" class="hidden border-t border-zinc-800/60">
-          <div class="relative w-full" style="padding-bottom: 62%; min-height: 340px;">
-            <iframe
-              src="assets/pdf/hvac-tennessee-results.pdf"
-              class="absolute inset-0 w-full h-full rounded-b-2xl"
-              style="border:0; background:#0a0a0a;"
-              title="HVAC USA Client — GA Dashboard Apr–Oct 2026"
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-
+      </div>
+      <div class="case-footer">
+        <span class="case-footer-note">Google Analytics dashboard — client data redacted under NDA</span>
+        <button class="case-toggle-btn" id="pdf-toggle">
+          <span id="pdf-toggle-label">View report</span>
+          <i class="fa-solid fa-chevron-down fa-xs" id="pdf-toggle-icon" style="transition: transform 0.3s;"></i>
+        </button>
+      </div>
+      <div class="pdf-panel" id="pdf-panel">
+        <iframe src="assets/pdf/hvac-tennessee-results.pdf"
+          title="HVAC USA Client — GA Dashboard Apr–Oct 2026"
+          loading="lazy"></iframe>
       </div>
     </div>
 
     <!-- Case study video -->
-    <div class="reveal reveal-d1 mb-10">
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 mb-7">
-        <div>
-          <div class="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 rounded-full px-4 py-1.5 mb-3">
-            <i class="fa-solid fa-circle text-red-500 text-xs animate-pulse"></i>
-            <span class="text-xs font-semibold text-red-400 tracking-wide">Live account walkthrough</span>
-          </div>
-          <h3 class="font-display font-black text-2xl sm:text-3xl text-white leading-tight">20× peak ROAS — US Google Ads</h3>
-          <p class="text-zinc-500 text-sm mt-1">eCommerce · US market · Best-performing week · Client data redacted under NDA</p>
-        </div>
-        <div class="glass rounded-xl p-4 text-center flex-shrink-0">
-          <div class="font-display font-black text-3xl text-emerald-400">20×</div>
-          <div class="text-zinc-600 text-xs mt-1">Peak ROAS</div>
-        </div>
+    <div class="video-section reveal">
+      <div class="video-label">
+        <span class="video-label-dot"></span>
+        Live account walkthrough
       </div>
-      <div class="video-border">
-        <div class="video-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube.com/embed/FFxJflJjZns?si=xpoEv6fVD0QqtgrJ"
-              title="20x Peak ROAS — US Google Ads Manager Account Review 2026"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
+      <div class="video-title">20× peak ROAS — US Google Ads</div>
+      <div class="video-meta">eCommerce · US market · Best-performing week · Client data redacted under NDA</div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/FFxJflJjZns?si=xpoEv6fVD0QqtgrJ"
+          title="20x Peak ROAS — US Google Ads Manager Account Review 2026"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <!-- Disclaimer: NDA reason given first — flips defensive framing into professional framing -->
-      <div class="mt-4 glass rounded-xl p-5 flex flex-wrap gap-5 items-center justify-between">
-        <div class="flex items-center gap-3 text-sm text-zinc-400">
-          <i class="fa-solid fa-shield-halved text-emerald-400"></i>
-          Client accounts are covered by NDA. Business names and URLs are redacted — the numbers and campaign structure are untouched.
-        </div>
-        <a href="https://hanslacida.com/results" class="text-blue-400 text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-          Full case studies <i class="fa-solid fa-arrow-right"></i>
-        </a>
+      <div class="video-nda">
+        <span class="video-nda-text"><i class="fa-solid fa-shield-halved"></i> Client accounts are covered by NDA. Business names and URLs are redacted — numbers and campaign structure are untouched.</span>
+        <a href="https://hanslacida.com/results">Full case studies <i class="fa-solid fa-arrow-right fa-xs"></i></a>
       </div>
     </div>
 
     <!-- Intro video -->
-    <div class="reveal reveal-d2">
-      <div class="text-center mb-7">
-        <h3 class="font-display font-black text-2xl sm:text-3xl text-white mb-2">Hear it from Hans directly</h3>
-        <p class="text-zinc-400">Two minutes — how he works, what he looks for, why it matters.</p>
+    <div class="reveal">
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h3 style="font-size: 1.375rem; font-weight: 700; color: var(--white); margin: 0 0 6px;">Hear it from Hans directly</h3>
+        <p style="font-size: 0.9375rem; color: var(--muted); margin: 0;">Two minutes — how he works, what he looks for, why it matters.</p>
       </div>
-      <div class="video-border">
-        <div class="video-inner">
-          <div class="video-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/-ebgnW8jNLQ?si=rL2glJQAU1-H8Z5J"
-              title="PPC Hans Lacida — Introduction"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/-ebgnW8jNLQ?si=rL2glJQAU1-H8Z5J"
+          title="PPC Hans Lacida — Introduction"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- ── ABOUT ── -->
-<section id="about" class="relative py-24 lg:py-32 bg-zinc-950 overflow-hidden">
-  <div class="absolute inset-0 grid-bg opacity-20"></div>
-  <div class="max-w-5xl mx-auto px-5 sm:px-8 relative z-10">
-    <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-      <div class="reveal">
-        <div class="relative group">
-          <div class="absolute -inset-3 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-3xl blur-xl opacity-70 group-hover:opacity-90 transition-opacity duration-500"></div>
-          <div class="relative glass rounded-3xl p-2.5">
-            <img src="https://i.ibb.co/1fWcjGrw/ppchans-media-profile.png"
-                 alt="Hans Lacida — Google Ads Specialist"
-                 class="w-full rounded-2xl shadow-xl group-hover:scale-[1.01] transition-transform duration-500">
-          </div>
-        </div>
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="https://i.ibb.co/1fWcjGrw/ppchans-media-profile.png"
+             alt="Hans Lacida — Google Ads Specialist" />
       </div>
-
-      <div class="reveal reveal-d1 space-y-6">
-        <div>
-          <!-- Removed eyebrow label — heading is sufficient -->
-          <h2 class="font-display font-black text-4xl sm:text-5xl leading-tight">
-            Hans "Dexter"<br><span class="gradient-text">Lacida</span>
-          </h2>
-        </div>
-
-        <!-- "Senior" instead of "Veteran"; clearer positioning sentence -->
-        <p class="text-zinc-300 text-lg leading-relaxed">
-          Senior Google Ads specialist with 10+ years hands-on, including time as a Google Account Strategist. Works directly with US founders — no account managers, no junior handoffs.
+      <div class="reveal">
+        <h2>Hans "Dexter"<br><span style="color: var(--blue);">Lacida</span></h2>
+        <p style="font-size: 1.0625rem; color: var(--dim); line-height: 1.75; margin: 16px 0 28px;">
+          Senior Google Ads specialist with 10+ years hands-on. Works directly with US founders — no account managers, no junior handoffs.
         </p>
-
-        <div class="space-y-3.5">
-          <div class="flex gap-3.5 items-start">
-            <i class="fa-solid fa-check text-emerald-400 mt-1 flex-shrink-0 text-sm"></i>
-            <span class="text-zinc-400 text-sm leading-relaxed">Search, Shopping, Performance Max, and server-side tracking</span>
-          </div>
-          <div class="flex gap-3.5 items-start">
-            <i class="fa-solid fa-check text-emerald-400 mt-1 flex-shrink-0 text-sm"></i>
-            <span class="text-zinc-400 text-sm leading-relaxed">US-market focused · available during US business hours</span>
-          </div>
-          <!-- "Selective intake" frames scarcity as exclusivity, not low capacity -->
-          <div class="flex gap-3.5 items-start">
-            <i class="fa-solid fa-check text-emerald-400 mt-1 flex-shrink-0 text-sm"></i>
-            <span class="text-zinc-400 text-sm leading-relaxed">Selective intake — 2 spots per month. You work with Hans, not a team.</span>
-          </div>
-          <div class="flex gap-3.5 items-start">
-            <i class="fa-solid fa-check text-emerald-400 mt-1 flex-shrink-0 text-sm"></i>
-            <span class="text-zinc-400 text-sm leading-relaxed">4.5★ on Clutch · $50M+ tracked revenue · 10+ accounts · 2018–2026</span>
-          </div>
-        </div>
-
-        <div class="flex gap-4 pt-2">
-          <a href="https://hanslacida.com" class="bg-white text-zinc-950 font-black px-6 py-3.5 rounded-xl hover:bg-zinc-100 transition-all duration-300 shadow-xl hover:scale-105 flex items-center gap-2.5 text-sm">
+        <ul class="about-checks">
+          <li><i class="fa-solid fa-check"></i> Search, Shopping, Performance Max, and server-side tracking</li>
+          <li><i class="fa-solid fa-check"></i> US-market focused — available during US business hours</li>
+          <li><i class="fa-solid fa-check"></i> Selective intake — 2 spots per month. You work with Hans, not a team.</li>
+          <li><i class="fa-solid fa-check"></i> Verified results across US eCommerce, healthcare, and B2B · 2018–2026</li>
+        </ul>
+        <div class="about-btn-row">
+          <a href="https://hanslacida.com" class="btn-primary" style="background: var(--white); color: var(--ink);">
             hanslacida.com <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <a href="https://www.linkedin.com/in/hanslacida/" target="_blank" rel="noopener" class="glass hover:bg-zinc-800 text-zinc-300 px-5 py-3.5 rounded-xl transition-all duration-300 flex items-center gap-2.5 text-sm">
-            <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn
+          <a href="https://www.linkedin.com/in/hanslacida/" target="_blank" rel="noopener" class="btn-ghost">
+            <i class="fa-brands fa-linkedin" style="color: var(--blue-l);"></i> LinkedIn
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- ── FAQ ── -->
-<section id="faq" class="relative py-24 lg:py-32 bg-zinc-950 overflow-hidden">
-  <div class="absolute inset-0 grid-bg opacity-20"></div>
-  <div class="max-w-3xl mx-auto px-5 sm:px-8 relative z-10">
-
-    <div class="text-center mb-14 reveal">
-      <h2 class="font-display font-black text-4xl sm:text-5xl mb-4 leading-tight">
-        Common <span class="gradient-text">questions</span>
-      </h2>
-      <p class="text-zinc-400 text-lg max-w-md mx-auto">
-        Things serious clients and collaborators ask before reaching out. Answered directly.
-      </p>
+<section id="faq" style="background: var(--ink);">
+  <div class="section-inner-narrow">
+    <div class="section-head center reveal">
+      <h2>Common <span style="color: var(--blue);">questions</span></h2>
+      <p class="section-sub">Things serious clients and collaborators ask before reaching out. Answered directly.</p>
     </div>
 
-    <div class="faq-list reveal reveal-d1">
+    <div class="faq-list reveal">
 
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
           <span class="faq-q">Who do you typically work with?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a"><strong>US founders and operators</strong> spending $5K–$300K/month on Google Ads. Typically e-commerce brands on Shopify, healthcare practices, and B2B companies who want a single specialist accountable for results — not an account manager passing work to a junior team.</p>
+          <p class="faq-a"><strong>US founders and operators</strong> spending $5K–$300K/month on Google Ads. Typically ecommerce brands on Shopify, healthcare practices, and B2B companies who want a single specialist accountable for results — not an account manager passing work to a junior team.</p>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
           <span class="faq-q">What does working with you actually look like day to day?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
           <p class="faq-a">You talk directly to Hans — no layers. Onboarding starts with a full account audit and strategy brief. From there: weekly reporting, proactive optimizations, and a standing Slack or email thread. <strong>You don't chase for updates.</strong> If something changes in performance, you hear about it first.</p>
@@ -618,7 +959,7 @@
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
           <span class="faq-q">How many clients do you take on at once?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
           <p class="faq-a"><strong>2 new clients per month, maximum.</strong> The intake is selective by design — not to create artificial scarcity, but because the depth of work this system requires can't be spread thin. Each account gets genuine attention, not a templated weekly check-in.</p>
@@ -628,17 +969,17 @@
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
           <span class="faq-q">What platforms do you run campaigns on?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a"><strong>Google Ads is the core</strong> — Search, Shopping, and Performance Max. The tracking infrastructure underneath (GA4, GTM, server-side tagging, enhanced conversions) is just as important as the campaigns themselves. I also run Meta Ads and have hands-on experience with DV360, Microsoft Ads, and TikTok Ads where the brief calls for it.</p>
+          <p class="faq-a"><strong>Google Ads is the core</strong> — Search, Shopping, and Performance Max. The tracking infrastructure underneath (GA4, GTM, server-side tagging, enhanced conversions) is just as important as the campaigns themselves. I also run Meta Ads and have hands-on experience with Microsoft Ads and TikTok Ads where the brief calls for it.</p>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
           <span class="faq-q">Can I see real account results before committing?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
           <p class="faq-a"><strong>Yes — by request.</strong> Live account walkthroughs are conducted as a recorded screen-share session with Hans directly. Client business names and URLs are redacted under NDA, but the numbers, campaign structure, and decisions are real and unedited. Book a strategy call and we'll schedule it.</p>
@@ -648,40 +989,40 @@
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
           <span class="faq-q">Do you use AI in your work? How?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a"><strong>Yes — daily.</strong> Claude and ChatGPT are active parts of the workflow: keyword research, copy angle development, audit analysis, and anomaly investigation. AI handles the speed work; Hans handles the judgment. Every output is reviewed before it touches a live account or a client deliverable. The H.A.N.S. Framework's "N" — AI-native execution — is built around this.</p>
+          <p class="faq-a"><strong>Yes — daily.</strong> Claude and ChatGPT are active parts of the workflow: keyword research, copy angle development, audit analysis, and anomaly investigation. AI handles the speed work; Hans handles the judgment. Every output is reviewed before it touches a live account or a client deliverable.</p>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
-          <span class="faq-q">I'm interested in a paid collaboration or partnership — is that possible?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <span class="faq-q">I'm interested in a paid collaboration or white-label partnership — is that possible?</span>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a"><strong>Yes.</strong> Agency white-label partnerships, content collaborations, and paid speaking or training engagements are all on the table. Reach out with what you have in mind at <a href="mailto:hanzel@hanslacida.com">hanzel@hanslacida.com</a> — no intake form required for that conversation.</p>
+          <p class="faq-a"><strong>Yes.</strong> Agency white-label partnerships, content collaborations, and paid training engagements are all on the table. Reach out at <a href="mailto:hanzel@hanslacida.com">hanzel@hanslacida.com</a> — no intake form required for that conversation.</p>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
-          <span class="faq-q">Where can I see your full work history and background?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <span class="faq-q">Where can I see your full work history?</span>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a">Full experience, case studies, tech stack, and expertise areas are at <a href="https://cv.paxhl.com" target="_blank" rel="noopener">cv.paxhl.com</a> — Hans's dedicated CV site. It covers 10+ years of roles across e-commerce, healthcare, B2B, and agency work, with specific results and the platforms used in each engagement.</p>
+          <p class="faq-a">Full experience, case studies, tech stack, and expertise are at <a href="https://cv.paxhl.com" target="_blank" rel="noopener">cv.paxhl.com</a> — Hans's dedicated CV site. Covers 10+ years of roles across ecommerce, healthcare, B2B, and agency work with specific results and platforms used in each engagement.</p>
         </div>
       </div>
 
       <div class="faq-item">
         <button class="faq-trigger" aria-expanded="false">
           <span class="faq-q">What's the fastest way to get started?</span>
-          <div class="faq-chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a">Book the 15-minute strategy call at <a href="https://cal.com/hanslacida" target="_blank" rel="noopener">cal.com/hanslacida</a>. Come with your current monthly ad spend and your biggest frustration with the account — that's all you need. Hans will identify the highest-leverage fix and tell you whether it makes sense to work together.</p>
+          <p class="faq-a">Book the 15-minute audit call below or at <a href="https://cal.com/hanslacida" target="_blank" rel="noopener">cal.com/hanslacida</a>. Come with your current monthly ad spend and your biggest frustration with the account — that's all you need. Hans will identify the highest-leverage fix and tell you whether it makes sense to work together.</p>
         </div>
       </div>
 
@@ -690,206 +1031,154 @@
 </section>
 
 <!-- ── CONTACT ── -->
-<section id="contact" class="relative py-24 lg:py-32 bg-black overflow-hidden">
-  <div class="absolute inset-0 grid-bg opacity-20"></div>
-  <div class="absolute top-0 left-1/3 w-[500px] h-[500px] bg-blue-700/10 rounded-full blur-[120px] float"></div>
-  <div class="absolute bottom-0 right-1/3 w-[500px] h-[500px] bg-purple-700/8 rounded-full blur-[120px] float-d"></div>
-
-  <div class="max-w-3xl mx-auto px-5 sm:px-8 relative z-10">
-    <div class="text-center mb-12 reveal">
-
-      <!-- Scarcity bar above CTA — specific, not vague -->
-      <div class="scarcity-bar rounded-xl px-5 py-3 mb-8 flex items-center justify-center gap-3">
-        <span class="relative flex h-2 w-2">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
-        </span>
-        <span class="text-sm text-zinc-300">2 client spots available per month — currently accepting inquiries</span>
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="availability-bar">
+          <span style="width:7px;height:7px;border-radius:50%;background:var(--blue);display:inline-block;flex-shrink:0;"></span>
+          2 spots available this month
+        </div>
+        <h2>Book a<br><span style="color: var(--blue);">strategy call</span></h2>
+        <p style="font-size: 1.0625rem; color: var(--dim); line-height: 1.7; margin: 16px 0 0; max-width: 420px;">
+          15 minutes. Walk away knowing exactly where your ad spend is leaking — and what to fix first.
+        </p>
+        <div class="contact-info">
+          <a href="mailto:hanzel@hanslacida.com">
+            <i class="fa-solid fa-envelope"></i> hanzel@hanslacida.com
+          </a>
+          <a href="tel:+19342215466">
+            <i class="fa-solid fa-phone"></i> +1 (934) 221-5466
+          </a>
+          <a href="https://cal.com/hanslacida" target="_blank" rel="noopener">
+            <i class="fa-solid fa-calendar"></i> cal.com/hanslacida
+          </a>
+          <a href="https://linkedin.com/in/hanslacida" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> linkedin.com/in/hanslacida
+          </a>
+        </div>
+        <p class="contact-note">
+          For agency partnerships, white-label work, or content inquiries — use the same email. Replies within 24–48 hrs.
+        </p>
       </div>
 
-      <h2 class="font-display font-black text-4xl sm:text-5xl mb-5 leading-tight">
-        Book a <span class="gradient-text">strategy call</span>
-      </h2>
-      <!-- Specific outcome replaces vague "clear next step" -->
-      <p class="text-zinc-400 text-lg max-w-md mx-auto">
-        15 minutes. Walk away knowing exactly where your ad spend is leaking — and what to fix first.
-      </p>
-
-      <!-- Moved "reply within 48 hrs" below the main pitch, not beside the CTA -->
-      <div class="flex flex-wrap items-center justify-center gap-6 mt-5 text-sm text-zinc-500">
-        <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-blue-400 text-xs"></i> 15 minutes</span>
-        <span class="flex items-center gap-2"><i class="fa-solid fa-globe text-blue-400 text-xs"></i> US founders</span>
-        <span class="flex items-center gap-2"><i class="fa-solid fa-dollar-sign text-blue-400 text-xs"></i> $5K–$300K/mo budgets</span>
+      <div class="booking-wrap reveal">
+        <div class="tidycal-embed" data-path="hanslacida/15min-roas-audit-3z45lqj"></div>
+        <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
       </div>
-    </div>
-
-    <div class="glass rounded-2xl overflow-hidden reveal reveal-d1">
-      <div class="tidycal-embed" data-path="hanslacida/15min-roas-audit-3z45lqj"></div>
-      <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
-    </div>
-
-    <!-- Reply window moved here — after booking widget, not beside CTA -->
-    <div class="text-center mt-6 reveal reveal-d2 space-y-2">
-      <p class="text-zinc-500 text-sm">
-        Prefer email? <a href="mailto:hanzel@hanslacida.com" class="text-blue-400 hover:text-blue-300 transition-colors">hanzel@hanslacida.com</a> — replies within 24–48 hrs.
-      </p>
-      <p class="text-zinc-600 text-xs">For paid collaboration, agency partnerships, or content inquiries — use the same email.</p>
     </div>
   </div>
 </section>
 
 <!-- ── FOOTER ── -->
-<footer class="bg-black border-t border-zinc-900/60 pt-16 pb-8">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
 
-    <!-- Top grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
-
-      <!-- Brand col -->
-      <div class="lg:col-span-1">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-9 h-9 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-700/30">
-            <span class="text-white font-display font-black text-base">H</span>
-          </div>
-          <span class="font-display font-bold text-white">PPC Hans</span>
-        </div>
-        <p class="text-zinc-500 text-sm leading-relaxed mb-5">
-          Google Ads systems built for US founders. Revenue-focused, signal-first, no account managers.
-        </p>
-        <div class="flex gap-3">
-          <a href="https://linkedin.com/in/hanslacida" target="_blank" rel="noopener"
-             class="w-8 h-8 glass rounded-lg flex items-center justify-center text-zinc-500 hover:text-blue-400 hover:border-blue-500/40 transition-colors">
-            <i class="fa-brands fa-linkedin text-sm"></i>
-          </a>
-          <a href="https://www.youtube.com/@ppchansluck" target="_blank" rel="noopener"
-             class="w-8 h-8 glass rounded-lg flex items-center justify-center text-zinc-500 hover:text-red-400 transition-colors">
-            <i class="fa-brands fa-youtube text-sm"></i>
-          </a>
-          <a href="mailto:hanzel@hanslacida.com"
-             class="w-8 h-8 glass rounded-lg flex items-center justify-center text-zinc-500 hover:text-blue-400 transition-colors">
-            <i class="fa-solid fa-envelope text-sm"></i>
-          </a>
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" style="text-decoration:none;">
+          <div class="logo-mark">H</div>
+          PPC Hans
+        </a>
+        <p>Google Ads systems built for US ecommerce founders. Revenue-focused, signal-first, no account managers.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/hanslacida" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.youtube.com/@ppchansluck" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="mailto:hanzel@hanslacida.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
 
-      <!-- Nav col -->
-      <div>
-        <h4 class="text-xs font-semibold text-zinc-500 mb-4 tracking-wider">On this page</h4>
-        <ul class="space-y-2.5">
-          <li><a href="#framework" class="text-sm text-zinc-400 hover:text-white transition-colors">Framework</a></li>
-          <li><a href="#results" class="text-sm text-zinc-400 hover:text-white transition-colors">Results</a></li>
-          <li><a href="#about" class="text-sm text-zinc-400 hover:text-white transition-colors">About Hans</a></li>
-          <li><a href="#faq" class="text-sm text-zinc-400 hover:text-white transition-colors">FAQ</a></li>
-          <li><a href="#contact" class="text-sm text-zinc-400 hover:text-white transition-colors">Book a call</a></li>
+      <div class="footer-col">
+        <h4>On this page</h4>
+        <ul>
+          <li><a href="#framework">Framework</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#about">About Hans</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Book a call</a></li>
         </ul>
       </div>
 
-      <!-- Specialties col -->
-      <div>
-        <h4 class="text-xs font-semibold text-zinc-500 mb-4 tracking-wider">Specialties</h4>
-        <ul class="space-y-2.5">
-          <li><span class="text-sm text-zinc-400">Google Search Ads</span></li>
-          <li><span class="text-sm text-zinc-400">Performance Max</span></li>
-          <li><span class="text-sm text-zinc-400">Google Shopping</span></li>
-          <li><span class="text-sm text-zinc-400">Conversion Tracking</span></li>
-          <li><span class="text-sm text-zinc-400">eCommerce & Healthcare</span></li>
-          <li><span class="text-sm text-zinc-400">HVAC Companies</span></li>
-          <li><span class="text-sm text-zinc-400">Shopify and Woocommerce</span></li>
+      <div class="footer-col">
+        <h4>Specialties</h4>
+        <ul>
+          <li><span>Google Search Ads</span></li>
+          <li><span>Performance Max</span></li>
+          <li><span>Google Shopping</span></li>
+          <li><span>Conversion Tracking</span></li>
+          <li><span>Shopify &amp; WooCommerce</span></li>
+          <li><span>eCommerce &amp; Healthcare</span></li>
         </ul>
       </div>
 
-      <!-- Contact col -->
-      <div>
-        <h4 class="text-xs font-semibold text-zinc-500 mb-4 tracking-wider">Contact</h4>
-        <ul class="space-y-2.5">
-          <li>
-            <a href="https://hanslacida.com" target="_blank" rel="noopener" class="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-              <i class="fa-solid fa-globe text-zinc-600 text-xs w-3"></i> hanslacida.com
-            </a>
-          </li>
-          <li>
-            <a href="mailto:hanzel@hanslacida.com" class="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-              <i class="fa-solid fa-envelope text-zinc-600 text-xs w-3"></i> hanzel@hanslacida.com
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/hanslacida" target="_blank" rel="noopener" class="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-              <i class="fa-brands fa-linkedin text-zinc-600 text-xs w-3"></i> linkedin.com/in/hanslacida
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@ppchansluck" target="_blank" rel="noopener" class="text-sm text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-              <i class="fa-brands fa-youtube text-zinc-600 text-xs w-3"></i> @ppchansluck
-            </a>
-          </li>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://hanslacida.com" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> hanslacida.com</a></li>
+          <li><a href="mailto:hanzel@hanslacida.com"><i class="fa-solid fa-envelope"></i> hanzel@hanslacida.com</a></li>
+          <li><a href="tel:+19342215466"><i class="fa-solid fa-phone"></i> +1 (934) 221-5466</a></li>
+          <li><a href="https://linkedin.com/in/hanslacida" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/hanslacida</a></li>
+          <li><a href="https://www.youtube.com/@ppchansluck" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> @ppchansluck</a></li>
         </ul>
       </div>
 
     </div>
 
-    <!-- Divider -->
-    <div class="h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent mb-8"></div>
+    <div class="footer-rule"></div>
 
-    <!-- Bottom bar -->
-    <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-      <p class="text-xs text-zinc-600">© 2026 Hans Lacida · Kaizenstrategy Solutions LLC · Wyoming, USA</p>
-      <div class="flex items-center gap-4 text-xs text-zinc-700">
-        <a href="https://hanslacida.com" target="_blank" rel="noopener" class="hover:text-zinc-400 transition-colors">hanslacida.com</a>
-        <span>·</span>
-        <a href="https://ppchans.com" class="hover:text-zinc-400 transition-colors">ppchans.com</a>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Hans Lacida · KaizenStrategy Solutions LLC · Wyoming, USA</p>
+      <div class="footer-links">
+        <a href="https://hanslacida.com" target="_blank" rel="noopener">hanslacida.com</a>
+        <a href="https://ppchans.com">ppchans.com</a>
       </div>
     </div>
-
   </div>
 </footer>
 
 <script>
-  // Mobile nav
+  // ── MOBILE NAV ──
   const mobBtn = document.getElementById('mob-btn');
   const mobMenu = document.getElementById('mob-menu');
   mobBtn.addEventListener('click', () => {
-    mobMenu.classList.toggle('hidden');
+    const open = mobMenu.style.display === 'flex';
+    mobMenu.style.display = open ? 'none' : 'flex';
     const i = mobBtn.querySelector('i');
-    i.classList.toggle('fa-bars');
-    i.classList.toggle('fa-xmark');
+    i.className = open ? 'fa-solid fa-bars fa-lg' : 'fa-solid fa-xmark fa-lg';
   });
   document.querySelectorAll('#mob-menu a').forEach(l => l.addEventListener('click', () => {
-    mobMenu.classList.add('hidden');
-    const i = mobBtn.querySelector('i');
-    i.classList.remove('fa-xmark');
-    i.classList.add('fa-bars');
+    mobMenu.style.display = 'none';
+    mobBtn.querySelector('i').className = 'fa-solid fa-bars fa-lg';
   }));
 
-  // Scroll reveal (fade only — no slide per design guidance)
-  const ro = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
-    });
-  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
-
-  // Smooth scroll
+  // ── SMOOTH SCROLL ──
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e) {
       e.preventDefault();
       const t = document.querySelector(this.getAttribute('href'));
-      if (t) window.scrollTo({ top: t.offsetTop - 64, behavior: 'smooth' });
+      if (t) window.scrollTo({ top: t.offsetTop - 60, behavior: 'smooth' });
     });
   });
 
-  // FAQ accordion
+  // ── SCROLL REVEAL ──
+  const ro = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  // ── FAQ ──
   document.querySelectorAll('.faq-trigger').forEach(trigger => {
     trigger.addEventListener('click', () => {
       const item = trigger.closest('.faq-item');
       const body = item.querySelector('.faq-body');
       const isOpen = item.classList.contains('faq-open');
-      // close all
       document.querySelectorAll('.faq-item.faq-open').forEach(o => {
         o.classList.remove('faq-open');
         o.querySelector('.faq-body').style.maxHeight = '0';
         o.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
       });
-      // open clicked
       if (!isOpen) {
         item.classList.add('faq-open');
         body.style.maxHeight = body.scrollHeight + 'px';
@@ -898,26 +1187,19 @@
     });
   });
 
-  // PDF report toggle
+  // ── PDF TOGGLE ──
   const pdfToggle = document.getElementById('pdf-toggle');
   const pdfPanel  = document.getElementById('pdf-panel');
   const pdfLabel  = document.getElementById('pdf-toggle-label');
   const pdfIcon   = document.getElementById('pdf-toggle-icon');
   if (pdfToggle) {
     pdfToggle.addEventListener('click', () => {
-      const open = !pdfPanel.classList.contains('hidden');
-      pdfPanel.classList.toggle('hidden', open);
+      const open = pdfPanel.style.display === 'block';
+      pdfPanel.style.display = open ? 'none' : 'block';
       pdfLabel.textContent = open ? 'View report' : 'Close report';
       pdfIcon.style.transform = open ? 'rotate(0deg)' : 'rotate(180deg)';
     });
   }
-
-  // Page fade-in
-  window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.4s ease';
-    setTimeout(() => { document.body.style.opacity = '1'; }, 60);
-  });
 </script>
 </body>
 </html>

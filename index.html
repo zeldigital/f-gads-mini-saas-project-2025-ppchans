@@ -71,7 +71,6 @@
 
     body { overflow-x: hidden; margin: 0; }
 
-    /* ── GRID TEXTURE ── */
     .grid-tex {
       background-image:
         linear-gradient(var(--rule) 1px, transparent 1px),
@@ -174,25 +173,6 @@
       .hero-card { display: none; }
     }
 
-    .status-pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 6px 14px; border-radius: 100px;
-      border: 1px solid rgba(46,201,122,0.25);
-      background: rgba(46,201,122,0.06);
-      font-size: 0.78rem; color: var(--green);
-      font-weight: 500; margin-bottom: 28px;
-    }
-    .status-dot {
-      width: 7px; height: 7px; border-radius: 50%;
-      background: var(--green);
-      box-shadow: 0 0 0 3px rgba(46,201,122,0.2);
-      animation: pulse 2s ease-in-out infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
-
     h1 {
       font-size: clamp(2.6rem, 6vw, 4.2rem);
       font-weight: 800;
@@ -235,7 +215,6 @@
       padding-top: 28px;
       border-top: 1px solid var(--rule);
     }
-    .stat-item {}
     .stat-num {
       font-size: 1.75rem; font-weight: 800;
       color: var(--white); letter-spacing: -0.03em;
@@ -272,7 +251,7 @@
     }
     .card-rule { height: 1px; background: var(--rule); margin-bottom: 16px; }
     .hero-card-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
+      display: grid; grid-template-columns: repeat(2, 1fr);
       text-align: center; gap: 4px;
     }
     .card-stat-num {
@@ -296,7 +275,6 @@
       position: relative; z-index: 1;
     }
 
-    /* ── SECTION HEADINGS ── */
     h2 {
       font-size: clamp(1.9rem, 4vw, 2.8rem);
       font-weight: 800; letter-spacing: -0.03em;
@@ -369,7 +347,6 @@
       line-height: 1.5;
     }
 
-    /* HVAC card */
     .case-card {
       background: var(--ink-2); border: 1px solid var(--rule);
       border-radius: 16px; overflow: hidden; margin-bottom: 32px;
@@ -425,7 +402,6 @@
       .case-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
     }
 
-    /* Video */
     .video-section { margin-bottom: 32px; }
     .video-label {
       display: inline-flex; align-items: center; gap: 8px;
@@ -547,14 +523,6 @@
     @media (max-width: 860px) {
       .contact-grid { grid-template-columns: 1fr; gap: 40px; }
     }
-    .availability-bar {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 6px 14px; border-radius: 8px;
-      background: rgba(61,127,255,0.08);
-      border: 1px solid rgba(61,127,255,0.18);
-      font-size: 0.8125rem; color: var(--blue-l);
-      font-weight: 500; margin-bottom: 24px;
-    }
     .contact-info { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
     .contact-info a {
       display: flex; align-items: center; gap: 10px;
@@ -567,9 +535,68 @@
       margin-top: 24px; font-size: 0.8125rem; color: var(--muted);
       line-height: 1.6;
     }
-    .booking-wrap {
-      background: var(--ink); border: 1px solid var(--rule);
-      border-radius: 16px; overflow: hidden;
+
+    /* Booking CTA block */
+    .booking-cta-block {
+      background: var(--ink);
+      border: 1px solid var(--rule);
+      border-radius: 16px;
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .booking-cta-title {
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--white); line-height: 1.3;
+      margin: 0;
+    }
+    .booking-cta-desc {
+      font-size: 0.9375rem; color: var(--dim);
+      line-height: 1.7; margin: 0;
+    }
+    .booking-options {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .booking-option {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px;
+      background: var(--ink-2);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+    .booking-option:hover {
+      border-color: rgba(61,127,255,0.35);
+      background: rgba(61,127,255,0.04);
+    }
+    .booking-option-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: rgba(61,127,255,0.1);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--blue-l); flex-shrink: 0;
+      font-size: 0.875rem;
+    }
+    .booking-option-text {}
+    .booking-option-label {
+      font-size: 0.9375rem; font-weight: 600;
+      color: var(--white); display: block; margin-bottom: 2px;
+    }
+    .booking-option-sub {
+      font-size: 0.78rem; color: var(--muted);
+    }
+    .booking-option-arrow {
+      margin-left: auto;
+      color: var(--muted); font-size: 0.75rem;
+      transition: color 0.2s, transform 0.2s;
+    }
+    .booking-option:hover .booking-option-arrow {
+      color: var(--blue-l); transform: translateX(3px);
+    }
+    @media (max-width: 540px) {
+      .booking-cta-block { padding: 28px 22px; }
     }
 
     /* ── FOOTER ── */
@@ -638,6 +665,11 @@
     .d1{animation-delay:0.05s} .d2{animation-delay:0.15s} .d3{animation-delay:0.25s}
     .d4{animation-delay:0.35s} .d5{animation-delay:0.45s}
 
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: var(--ink); }
     ::-webkit-scrollbar-thumb { background: var(--ink-3); border-radius: 4px; }
@@ -661,7 +693,7 @@
       <li><a href="#results">Results</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact" class="nav-cta">Book a call</a></li>
+      <li><a href="https://cal.com/contacthans-meeting" target="_blank" rel="noopener" class="nav-cta">Book a call</a></li>
     </ul>
     <button class="mob-btn" id="mob-btn" aria-label="Toggle menu">
       <i class="fa-solid fa-bars fa-lg"></i>
@@ -672,7 +704,7 @@
     <a href="#results">Results</a>
     <a href="#about">About</a>
     <a href="#faq">FAQ</a>
-    <a href="#contact" style="color: var(--blue); font-weight: 600;">Book a call →</a>
+    <a href="https://cal.com/contacthans-meeting" target="_blank" rel="noopener" style="color: var(--blue); font-weight: 600;">Book a call →</a>
   </div>
 </nav>
 
@@ -683,11 +715,6 @@
 
   <div class="hero-inner">
     <div>
-      <div class="status-pill h-enter d1">
-        <span class="status-dot"></span>
-        2 client spots open — US ecommerce
-      </div>
-
       <h1 class="h-enter d2">
         Google Ads<br>
         that move<br>
@@ -699,8 +726,8 @@
       </p>
 
       <div class="btn-row h-enter d4">
-        <a href="#contact" class="btn-primary">
-          Book a free 15-min audit <i class="fa-solid fa-arrow-right fa-sm"></i>
+        <a href="https://cal.com/contacthans-meeting" target="_blank" rel="noopener" class="btn-primary">
+          Book a free audit call <i class="fa-solid fa-arrow-right fa-sm"></i>
         </a>
         <a href="#results" class="btn-ghost">
           See verified results
@@ -741,10 +768,6 @@
           <div>
             <div class="card-stat-num">US</div>
             <div class="card-stat-label">Market focus</div>
-          </div>
-          <div>
-            <div class="card-stat-num">2 left</div>
-            <div class="card-stat-label">Spots this month</div>
           </div>
         </div>
       </div>
@@ -874,7 +897,7 @@
       </div>
       <div class="video-nda">
         <span class="video-nda-text"><i class="fa-solid fa-shield-halved"></i> Client accounts are covered by NDA. Business names and URLs are redacted — numbers and campaign structure are untouched.</span>
-        <a href="https://hanslacida.com/results">Full case studies <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        
       </div>
     </div>
 
@@ -910,13 +933,10 @@
         <ul class="about-checks">
           <li><i class="fa-solid fa-check"></i> Search, Shopping, Performance Max, and server-side tracking</li>
           <li><i class="fa-solid fa-check"></i> US-market focused — available during US business hours</li>
-          <li><i class="fa-solid fa-check"></i> Selective intake — 2 spots per month. You work with Hans, not a team.</li>
+          <li><i class="fa-solid fa-check"></i> You work with Hans directly, start to finish</li>
           <li><i class="fa-solid fa-check"></i> Verified results across US eCommerce, healthcare, and B2B · 2018–2026</li>
         </ul>
         <div class="about-btn-row">
-          <a href="https://hanslacida.com" class="btn-primary" style="background: var(--white); color: var(--ink);">
-            hanslacida.com <i class="fa-solid fa-arrow-right"></i>
-          </a>
           <a href="https://www.linkedin.com/in/hanslacida/" target="_blank" rel="noopener" class="btn-ghost">
             <i class="fa-brands fa-linkedin" style="color: var(--blue-l);"></i> LinkedIn
           </a>
@@ -942,7 +962,7 @@
           <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a"><strong>US founders and operators</strong> spending $5K–$300K/month on Google Ads. Typically ecommerce brands on Shopify, healthcare practices, and B2B companies who want a single specialist accountable for results — not an account manager passing work to a junior team.</p>
+          <p class="faq-a"><strong>US founders and operators</strong> spending $5K–$300K/month on Google Ads. Typically ecommerce brands on Shopify, healthcare practices, and B2B companies who want a single specialist accountable for results — not a managed service with layers between you and the work.</p>
         </div>
       </div>
 
@@ -953,16 +973,6 @@
         </button>
         <div class="faq-body">
           <p class="faq-a">You talk directly to Hans — no layers. Onboarding starts with a full account audit and strategy brief. From there: weekly reporting, proactive optimizations, and a standing Slack or email thread. <strong>You don't chase for updates.</strong> If something changes in performance, you hear about it first.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-trigger" aria-expanded="false">
-          <span class="faq-q">How many clients do you take on at once?</span>
-          <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        </button>
-        <div class="faq-body">
-          <p class="faq-a"><strong>2 new clients per month, maximum.</strong> The intake is selective by design — not to create artificial scarcity, but because the depth of work this system requires can't be spread thin. Each account gets genuine attention, not a templated weekly check-in.</p>
         </div>
       </div>
 
@@ -982,7 +992,7 @@
           <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a"><strong>Yes — by request.</strong> Live account walkthroughs are conducted as a recorded screen-share session with Hans directly. Client business names and URLs are redacted under NDA, but the numbers, campaign structure, and decisions are real and unedited. Book a strategy call and we'll schedule it.</p>
+          <p class="faq-a"><strong>Yes — by request.</strong> Live account walkthroughs are conducted as a recorded screen-share session with Hans directly. Client business names and URLs are redacted under NDA, but the numbers, campaign structure, and decisions are real and unedited. Book a call and we'll schedule it.</p>
         </div>
       </div>
 
@@ -1002,7 +1012,7 @@
           <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a"><strong>Yes.</strong> Agency white-label partnerships, content collaborations, and paid training engagements are all on the table. Reach out at <a href="mailto:hanzel@hanslacida.com">hanzel@hanslacida.com</a> — no intake form required for that conversation.</p>
+          <p class="faq-a"><strong>Yes.</strong> Paid training engagements and content collaborations are on the table too. Reach out at <a href="mailto:hans@ppchans.com">hans@ppchans.com</a> — no intake form required for that conversation.</p>
         </div>
       </div>
 
@@ -1012,7 +1022,7 @@
           <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a">Full experience, case studies, tech stack, and expertise are at <a href="https://cv.paxhl.com" target="_blank" rel="noopener">cv.paxhl.com</a> — Hans's dedicated CV site. Covers 10+ years of roles across ecommerce, healthcare, B2B, and agency work with specific results and platforms used in each engagement.</p>
+          <p class="faq-a">Full experience, case studies, tech stack, and expertise are at <a href="https://cv.paxhl.com" target="_blank" rel="noopener">cv.paxhl.com</a> — Hans's dedicated CV site. Covers 10+ years of roles across ecommerce, healthcare, B2B, and home services with specific results and platforms used in each engagement.</p>
         </div>
       </div>
 
@@ -1022,7 +1032,7 @@
           <div class="faq-chevron"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         </button>
         <div class="faq-body">
-          <p class="faq-a">Book the 15-minute audit call below or at <a href="https://cal.com/hanslacida" target="_blank" rel="noopener">cal.com/hanslacida</a>. Come with your current monthly ad spend and your biggest frustration with the account — that's all you need. Hans will identify the highest-leverage fix and tell you whether it makes sense to work together.</p>
+          <p class="faq-a">Book a call at <a href="https://cal.com/contacthans-meeting" target="_blank" rel="noopener">cal.com/contacthans-meeting</a>. Come with your current monthly ad spend and your biggest frustration with the account — that's all you need. Hans will identify the highest-leverage fix and tell you whether it makes sense to work together.</p>
         </div>
       </div>
 
@@ -1035,36 +1045,50 @@
   <div class="section-inner">
     <div class="contact-grid">
       <div class="reveal">
-        <div class="availability-bar">
-          <span style="width:7px;height:7px;border-radius:50%;background:var(--blue);display:inline-block;flex-shrink:0;"></span>
-          2 spots available this month
-        </div>
-        <h2>Book a<br><span style="color: var(--blue);">strategy call</span></h2>
+        <h2>Book a<br><span style="color: var(--blue);">call</span></h2>
         <p style="font-size: 1.0625rem; color: var(--dim); line-height: 1.7; margin: 16px 0 0; max-width: 420px;">
-          15 minutes. Walk away knowing exactly where your ad spend is leaking — and what to fix first.
+          Walk away knowing exactly where your ad spend is leaking — and what to fix first.
         </p>
         <div class="contact-info">
-          <a href="mailto:hanzel@hanslacida.com">
-            <i class="fa-solid fa-envelope"></i> hanzel@hanslacida.com
+          <a href="mailto:hans@ppchans.com">
+            <i class="fa-solid fa-envelope"></i> hans@ppchans.com
           </a>
           <a href="tel:+19342215466">
             <i class="fa-solid fa-phone"></i> +1 (934) 221-5466
           </a>
-          <a href="https://cal.com/hanslacida" target="_blank" rel="noopener">
-            <i class="fa-solid fa-calendar"></i> cal.com/hanslacida
+          <a href="https://cal.com/contacthans-meeting" target="_blank" rel="noopener">
+            <i class="fa-solid fa-calendar"></i> cal.com/contacthans-meeting
           </a>
           <a href="https://linkedin.com/in/hanslacida" target="_blank" rel="noopener">
             <i class="fa-brands fa-linkedin"></i> linkedin.com/in/hanslacida
           </a>
         </div>
         <p class="contact-note">
-          For agency partnerships, white-label work, or content inquiries — use the same email. Replies within 24–48 hrs.
+          For partnerships, white-label work, or content inquiries — same email. Replies within 24–48 hrs.
         </p>
       </div>
 
-      <div class="booking-wrap reveal">
-        <div class="tidycal-embed" data-path="hanslacida/15min-roas-audit-3z45lqj"></div>
-        <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+      <div class="booking-cta-block reveal">
+        <p class="booking-cta-title">Pick a time that works for you</p>
+        <p class="booking-cta-desc">Choose the format that fits — a quick gut-check or a deeper strategy session. Both go to the same place.</p>
+        <div class="booking-options">
+          <a href="https://cal.com/contacthans-meeting" target="_blank" rel="noopener" class="booking-option">
+            <div class="booking-option-icon"><i class="fa-regular fa-clock"></i></div>
+            <div class="booking-option-text">
+              <span class="booking-option-label">15-minute audit call</span>
+              <span class="booking-option-sub">Your biggest issue, the clearest fix, next steps</span>
+            </div>
+            <i class="fa-solid fa-arrow-right booking-option-arrow"></i>
+          </a>
+          <a href="https://cal.com/contacthans-meeting" target="_blank" rel="noopener" class="booking-option">
+            <div class="booking-option-icon"><i class="fa-regular fa-calendar-check"></i></div>
+            <div class="booking-option-text">
+              <span class="booking-option-label">30-minute strategy session</span>
+              <span class="booking-option-sub">Full account review, framework walkthrough, fit assessment</span>
+            </div>
+            <i class="fa-solid fa-arrow-right booking-option-arrow"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1084,7 +1108,7 @@
         <div class="footer-social">
           <a href="https://linkedin.com/in/hanslacida" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://www.youtube.com/@ppchansluck" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="mailto:hanzel@hanslacida.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="mailto:hans@ppchans.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
 
@@ -1095,7 +1119,7 @@
           <li><a href="#results">Results</a></li>
           <li><a href="#about">About Hans</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Book a call</a></li>
+          <li><a href="https://cal.com/contacthans-meeting" target="_blank" rel="noopener">Book a call</a></li>
         </ul>
       </div>
 
@@ -1114,8 +1138,7 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="https://hanslacida.com" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> hanslacida.com</a></li>
-          <li><a href="mailto:hanzel@hanslacida.com"><i class="fa-solid fa-envelope"></i> hanzel@hanslacida.com</a></li>
+          <li><a href="mailto:hans@ppchans.com"><i class="fa-solid fa-envelope"></i> hans@ppchans.com</a></li>
           <li><a href="tel:+19342215466"><i class="fa-solid fa-phone"></i> +1 (934) 221-5466</a></li>
           <li><a href="https://linkedin.com/in/hanslacida" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/hanslacida</a></li>
           <li><a href="https://www.youtube.com/@ppchansluck" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> @ppchansluck</a></li>
@@ -1129,7 +1152,6 @@
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 Hans Lacida · KaizenStrategy Solutions LLC · Wyoming, USA</p>
       <div class="footer-links">
-        <a href="https://hanslacida.com" target="_blank" rel="noopener">hanslacida.com</a>
         <a href="https://ppchans.com">ppchans.com</a>
       </div>
     </div>
@@ -1150,15 +1172,6 @@
     mobMenu.style.display = 'none';
     mobBtn.querySelector('i').className = 'fa-solid fa-bars fa-lg';
   }));
-
-  // ── SMOOTH SCROLL ──
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', function(e) {
-      e.preventDefault();
-      const t = document.querySelector(this.getAttribute('href'));
-      if (t) window.scrollTo({ top: t.offsetTop - 60, behavior: 'smooth' });
-    });
-  });
 
   // ── SCROLL REVEAL ──
   const ro = new IntersectionObserver((entries) => {
